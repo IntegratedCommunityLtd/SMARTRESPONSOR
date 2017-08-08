@@ -15,10 +15,10 @@ class JConfig {
 	public $host = '';
 	public $user = '';
 	public $password = '';
-	public $db = 'smartresponsor_dev';
+	public $db = '';
 	public $dbprefix = '';
 	public $live_site = '';
-	public $secret = 'NQV7Dc4HgiFSuJKJ';
+	public $secret = '';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
@@ -31,7 +31,7 @@ class JConfig {
 	public $offset = 'UTC';
 	public $mailonline = '1';
 	public $mailer = 'mail';
-	public $mailfrom = 'taa0662621456@gmail.com';
+	public $mailfrom = '';
 	public $fromname = 'IC';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
@@ -56,8 +56,8 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $feed_email = 'none';
-	public $log_path = 'C:\\OpenServer\\domains\\localhost\\smartresponsor\\administrator/logs';
-	public $tmp_path = 'C:\\OpenServer\\domains\\localhost\\smartresponsor/tmp';
+	public $log_path = '';
+	public $tmp_path = '';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $shared_session = '0';
