@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension method="upgrade" version="1.0" type="plugin" group="vmcustom" >
+    <name>VMCustom - VMVendor in Cart</name>
+    <creationDate>July 2016</creationDate>
+    <author>Nordmograph.com</author>
+    <authorUrl>http://www.nordmograph.com</authorUrl>
+    <copyright>Copyright (C) 2010-2016 Nordmograph. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0</version>
+    <description>Add a reference and link to the product vendor in cart and order invoice. This has been installed automatically during the component installtion. It is a VMCustom plugin so it requires you create a VM Custom field (type: plugin) with this plugin, in Virtuemart VM custom fields manager.</description>
+    <languages>
+       
+    </languages>
+
+    <files>
+        <filename plugin="vmvendorincart">vmvendorincart.php</filename>
+        <folder>css</folder>
+		<folder>vmvendorincart</folder>
+    </files>
+    
+	<!-- <vmconfig>
+        <fields name="params">
+            <fieldset name="template">
+            <field name="profileman" type="list"  default="vmv" label="Profile Manager" description="Profile Manager component, it is highly recommended to kep this to VMVendor vendor profile" >
+                <option value="vmv">VMVendor Vendor Profile</option>
+                <option value="cb">CB profile</option>
+            </field>
+			 <field name="firstproduct" type="list"  default="0" label="First product only" description="If cart only contains item from the same vendor , the reference doesn't need to be added to every products. You can enable this." >
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            </fieldset>
+        </fields>
+    </vmconfig>-->
+	
+	
+</extension>

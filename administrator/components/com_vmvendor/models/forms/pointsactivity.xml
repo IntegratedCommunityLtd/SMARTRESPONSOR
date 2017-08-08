@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="userid" type="text" size="40" class="inputbox"
+        
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_USERID"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_USERID" 
+         default="" 
+        required="true"
+        filter="integer" /> 
+
+       <field name="points" type="text" size="40" class="inputbox"
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_POINTS"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_POINTS" 
+			required="true"
+         default="" 
+        filter="safehtml" /> 
+
+       <field name="insert_date" type="calendar" class="inputbox"
+         default="NOW" 
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_INSERT_DATE"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_INSERT_DATE" 
+        format="%Y-%m-%d %H:%M:%S"
+        filter="safehtml" /> 
+
+       <field name="expire_date" type="calendar" class="inputbox"
+         default="0000-00-00 00:00:00" 
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_EXPIRE_DATE"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_EXPIRE_DATE" 
+        format="%Y-%m-%d %H:%M:%S"
+        filter="safehtml" /> 
+
+       <field name="status" type="radio" class="radio btn-group btn-group-yesno"
+        	label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_STATUS"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_STATUS" 
+         	default="1" 
+		> 
+			<option value="0">JUNPUBLISHED</option>
+			<option value="1">JPUBLISHED</option>
+		</field>
+
+       <field name="approved" type="radio" class="radio btn-group btn-group-yesno"
+        
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_APPROVED"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_APPROVED" 
+         default="1" > 
+			<option value="0">JNo</option>
+			<option value="1">JYes</option>
+		</field>
+
+       <field name="keyreference" type="text" size="40" class="inputbox"
+        
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_KEYREFERENCE"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_KEYREFERENCE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="datareference" type="editor" buttons="true"
+        class="inputbox"
+        filter="safehtml"
+        
+        
+        
+        
+            label="COM_VMVENDOR_FORM_LBL_POINTSACTIVITY_DATAREFERENCE"
+            description="COM_VMVENDOR_FORM_DESC_POINTSACTIVITY_DATAREFERENCE"  />
+
+	</fieldset>
+
+</form>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.vmvendor-toolbar{
+	float:right;
+}
+
+
+#columnchart_div{
+	width:100%;
+	height: 400px;
+	float:left;
+	
+}
+#mapchart_div{
+	width:100%;
+	height: 400px;
+	float:left;
+}
+
+#points_div{
+
+	float:right;
+	text-align:right;
+	padding: 0 0 10px 0;
+	
+}
+#modal-mailcustomer{
+	left: auto;
+	z-index: 10500;
+	width: 550px;
+}
+.right_addbutton{
+    float:right;
+    padding-bottom:15px;
+}
+#mailcustomer_iframe{width:100%;height:520px;border:none;overflow:hidden}

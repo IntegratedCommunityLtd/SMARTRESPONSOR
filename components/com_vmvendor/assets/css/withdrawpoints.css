@@ -1,0 +1,14 @@
+/* CSS Document */
+#vmv-exchange-icon{    margin: auto;
+    width: 400px;
+    font-size: 50px;
+    text-align: center;}
+.vmv-pts-countr{float:right;width:150px;padding:10px 0 0 0 !important}
+#vmv-pts-badgecontainer{float:right;width:150px;text-align:center;}
+#vmv-cntr{font-size:30px}
+.greenlight{color:green}
+.redlight{color:red}
+.vmv-mini-info{font-size:10px;line-height:12px;}
+#pts_equivalent{width:100px}
+.validate-iban, .validate-email{width:250px}
+

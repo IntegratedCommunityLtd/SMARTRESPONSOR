@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="primaryfieldset">
+		<field 
+            name="withdrawpoints" 
+            type="withdrawpoints" 
+            label="COM_VMVENDOR_WITHDRAW_POINTSTOWITHDRAW_TITLE" 
+            description="COM_VMVENDOR_WITHDRAW_POINTSTOWITHDRAW_DESC" 
+			filter="float" 
+			class="inputbox required validate-numeric validate-maxpoints" 
+			required="true"  />
+		<field 
+            name="prefered_method" 
+            type="radio" 
+            label="COM_VMVENDOR_WITHDRAW_PREFEREDMETHOD_TITLE" 
+            description="COM_VMVENDOR_WITHDRAW_PAYPALEMAIL_DESC" 
+			filter="word" 
+			class="inputbox"  >
+				<option value="paypal">COM_VMVENDOR_WITHDRAW_OPTION_PAYPAL</option> 
+				<option value="iban">COM_VMVENDOR_WITHDRAW_OPTION_IBAN</option> 
+			</field>
+	
+		<field 
+            name="withdrawpaypalemail" 
+            type="withdrawpaypalemail" 
+            label="COM_VMVENDOR_WITHDRAW_PAYPALEMAIL_TITLE" 
+            description="COM_VMVENDOR_WITHDRAW_PAYPALEMAIL_DESC" 
+			filter="safehtml" 
+			class="inputbox validate-email"  />     
+		<field 
+            name="withdrawiban" 
+            type="withdrawiban" 
+            label="COM_VMVENDOR_WITHDRAW_IBAN_TITLE" 
+            description="COM_VMVENDOR_WITHDRAW_IBAN_DESC" 
+			filter="safehtml" 
+			class="inputbox validate-iban"  />        
+		<field
+			name="copyoftherequest"
+			type="checkbox"
+			label="COM_VMVENDOR_COPYOFTHEREQUEST_LABEL"
+			description="COM_VMVENDOR_COPYOFTHEREQUEST_DESC"
+			value="1"
+			default="1" 
+		/>		
+    </fieldset>
+</form>
