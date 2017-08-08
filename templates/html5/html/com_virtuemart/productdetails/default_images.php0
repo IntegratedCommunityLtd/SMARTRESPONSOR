@@ -1,0 +1,118 @@
+<?php
+/**
+ *
+ * Show the product details page
+ *
+ * @package	VirtueMart
+ * @subpackage
+ * @author Max Milbers, Valerie Isaksen
+
+ * @link http://www.virtuemart.net
+ * @copyright Copyright (c) 2004 - 2010 VirtueMart Team. All rights reserved.
+ * @license http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php
+ * VirtueMart is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * @version $Id: default_images.php 6188 2012-06-29 09:38:30Z Milbo $
+ */
+// Check to ensure this file is included in Joomla!
+defined('_JEXEC') or die('Restricted access');
+$numberlimit = 3;
+$imgResizeConfig = array(
+	'background' => '#ffffff',
+	'thumbnail_mode' => 'stretch'
+);					
+YTTemplateUtils::getImageResizerHelper($imgResizeConfig);
+
+$app = & JFactory::getApplication();
+$templateDir = JURI::base() . 'templates/' . $app->getTemplate();
+ 
+// Product Main Image
+if (!empty($this->product->images[0])) {
+	$imagesrcmain = YTTemplateUtils::resize($this->product->images[0]->file_url, '350', '360', 'stretch');
+?>
+    <div class="main-image">
+		<a id="yt_cloudzoom" href="<?php echo JURI::base().$this->product->images[0]->file_url;?>" class ="cloud-zoom" rel="zoomWidth:'200',zoomHeight:'150',position:'right', adjustX:20, adjustY:-3, tint:'#FFFFFF', softFocus:1, smoothMove:5, tintOpacity:0.8"  >
+			<img class="img-large" src="<?php echo $imagesrcmain;?>" title="" alt="" />
+		</a>
+		<div class="popup-btn">
+            <a id="yt_popup" data-rel="prettyPhoto" href="<?php echo JURI::base().$this->product->images[0]->file_url; ?>"><i class="icon-search"></i></a>
+        </div>
+    </div>
+<?php } 
+// Product Main Image END ?>
+
+<?php
+// Showing The Additional Images
+if (!empty($this->product->images) and count ($this->product->images)>1) {   ?>
+    <div class="additional-images yt-carousel">
+		<div class="list_carousel responsive">
+			<ul id="foo4">
+				<?php
+				// List all Images
+				if (count($this->product->images) > 0) {
+					foreach ($this->product->images as $key=>$image) { //echo count($this->product->images); die();
+						$imagesradditional = YTTemplateUtils::resize($image->file_url, '350', '360', 'stretch'); 
+						?>
+						<li>
+							<a title="" href="<?php echo JURI::base().$image->file_url;?>" rel="useZoom: 'yt_cloudzoom', smallImage: '<?php echo $imagesradditional;?>'" class="cloud-zoom-gallery <?php if ($key==0) echo ' active';?>" >
+								<img class="nav_thumb" src="<?php echo $imagesradditional;?>" alt="" />
+							</a>
+						</li>
+						<?php
+					}
+				}
+				?>
+			</ul>
+        </div>
+        <?php if(count($this->product->images) > $numberlimit){?>
+			<div class="nav_button">
+				<div class="prev">&nbsp;</div>
+				<div class="next">&nbsp;</div>
+			</div>
+		<?php }?>
+		<div class="clear"></div>
+    </div>
+<?php
+} // Showing The Additional Images END ?>
+
+<?php
+$document = JFactory::getDocument();
+$app = JFactory::getApplication();
+$templateDir = JURI::base() . 'templates/' . $app->getTemplate();
+?>
+<script type="text/javascript" src="<?php echo $templateDir.'/js/cloud-zoom.1.0.3.min.js' ?>"></script>
+<script type="text/javascript" src="<?php echo $templateDir.'/js/jquery.carouFredSel-6.2.1.js' ?>"></script>
+<?php
+$document->addStyleSheet($templateDir.'/css/cloud-zoom.css');
+?>
+<script type="text/javascript">
+	jQuery('#yt_cloudzoom, .cloud-zoom-gallery').CloudZoom();
+	jQuery(document).ready(function($) {
+		
+		//	Responsive layout, resizing the items
+		$('#foo4').carouFredSel({
+			responsive: true,
+			auto: false,
+			scroll: 1,
+			prev: '.prev',
+			next: '.next',
+			items: {
+				width: 125,
+			//	height: '30%',	//	optionally resize item-height
+				visible: {
+					min: 2,
+					max: 3
+				}
+			}
+		});
+		
+		$('a.cloud-zoom-gallery').bind('click', function(){
+			$('a.cloud-zoom-gallery').removeClass('active');
+			$(this).addClass('active');
+			$('a#yt_popup').attr('href', $(this).attr('href'));
+		}); 
+	});
+</script>
+<?php ?>

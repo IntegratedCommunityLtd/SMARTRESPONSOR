@@ -1,0 +1,48 @@
+<?php
+defined('_JEXEC') or die;
+$buffer .= '
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/js/mootools-core-1.6.0.js"></script> -->
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/js/mootools-more-1.6.0.js"></script> -->
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/js/viewportchecker.js"></script> -->
+<script type="text/javascript" src="//smartresponsor.com/components/com_community/assets/release/js/loader.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/components/com_community/assets/release_32/js/bundle.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/components/com_community/assets/vendors/toolkit.min.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/js/jquery.js"></script>
+<script type="text/javascript" defer src="//smartresponsor.com/js/jquery.bootstrap-autohidingnavbar.js"></script>
+<script type="text/javascript" defer src="//smartresponsor.com/media/system/js/html5fallback.js"></script>
+
+<script type="text/javascript" async src="//smartresponsor.com/js/jquery.fullPage.js"></script>
+<script type="text/javascript" defer src="//smartresponsor.com/js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/media/jui/js/jquery-noconflict.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/media/jui/js/jquery-migrate.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> -->
+<script type="text/javascript" defer src="//smartresponsor.com/js/eskju.jquery.scrollflow.min.js"></script>
+<!-- <script type="text/javascript" src="//smartresponsor.com/components/com_virtuemart/assets/js/chosen.jquery.min.js?vmver=9227"></script> -->
+<script type="text/javascript" src="//smartresponsor.com/js/chosen.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/media/jui/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/js/bootstrap-tooltip.min.js"></script>
+<script type="text/javascript" src="//smartresponsor.com/js/bootstrap-popover.min.js"></script>
+<script type="text/javascript" defer src="//smartresponsor.com/js/namespace.min.js"></script>
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/components/com_jbolo/jbolo/model/jquery.quicksearch.js"></script> -->
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/components/com_jbolo/jbolo/model/jquery.tmpl.min.js"></script> -->
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/components/com_jbolo/jbolo/model/modernizr-latest.js"></script> -->
+<!-- <script type="text/javascript" src="//smartresponsor.com/components/com_jbolo/jbolo/assets/js/jquery-ui-1.10.4.custom.min.js"></script> -->
+<script type="text/javascript" src="//smartresponsor.com/media/jui/js/jquery-migrate.min.js"></script>
+<!-- <script type="text/javascript" src="//smartresponsor.com/media/system/js/modal.js"></script> -->
+<script type="text/javascript" src="//smartresponsor.com/components/com_virtuemart/assets/js/jquery-ui.min.js?vmver=9227" defer ></script>
+<script type="text/javascript" defer src="//smartresponsor.com/components/com_virtuemart/assets/js/jquery.ui.autocomplete.html.js?vmver=9227" ></script>
+<script type="text/javascript" src="//smartresponsor.com/js/assets/js/vmsite.js?vmver=9227" defer ></script>
+<script type="text/javascript" src="//smartresponsor.com/components/com_virtuemart/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js?vmver=9227" defer></script>
+<script type="text/javascript" src="//smartresponsor.com/js/assets/js/vmprices.js?vmver=9227" defer ></script>
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/components/com_virtuemart/assets/js/fancybox/jquery.mousewheel-3.0.4.pack.js?vmver=9227" ></script> -->
+<!-- <script type="text/javascript" src="//smartresponsor.com/components/com_virtuemart/assets/js/fancybox/jquery.easing-1.3.pack.js?vmver=9227" defer></script> -->
+<script type="text/javascript" src="//smartresponsor.com/js/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js?vmver=9227" defer></script>
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/components/com_virtuemart/assets/js/vmtabs.js?vmver=9227" ></script> -->
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/components/com_virtuemart/assets/js/vmkeepalive.js?vmver=9227" ></script> -->
+<script type="text/javascript" defer src="//smartresponsor.com/media/system/js/core.js"></script>
+<script type="text/javascript" defer src="//smartresponsor.com/media/system/js/punycode.js"></script>
+<!-- <script type="text/javascript" defer src="//smartresponsor.com/media/system/js/validate.js"></script> -->
+<!-- <script type="text/javascript" async src="//smartresponsor.com/media/system/js/calendar.js"></script> -->
+<!-- <script type="text/javascript" async src="//smartresponsor.com/media/system/js/calendar-setup.js"></script> -->
+<!-- <script type="text/javascript" async src="//smartresponsor.com/modules/mod_cf_filtering/assets/general.js"></script> -->
+';

@@ -1,0 +1,468 @@
+<?php
+defined('_JEXEC') or die;
+//JHtml::_('behavior.keepalive');
+//JHtml::_('behavior.tooltip');
+//JHtml::_('behavior.formvalidation');
+
+?>
+
+<style>
+.z0,.z1, .z2, .z11-12 {display:none!important;width:0px;}
+.z3-10{width:inherit;float: inherit;padding: 0px;}
+#smarttop {margin-top:0px;}
+.active{border:none!important;}
+#page {margin-top:0px;}
+#nent {max-width:100%!important;width:100%;}
+</style>
+
+<!-- <link rel="stylesheet" type="text/css" href="/css/animate.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="/css/eskju.jquery.scrollflow.css" /> -->
+<link rel="stylesheet" type="text/css" defer href="/css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" defer href="/css/checkbox-style.css" />
+<!-- <link rel="stylesheet" type="text/css" href="/css/roboto.css?family=Roboto:400,100,300,500"> -->
+<link rel="stylesheet" asunc href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+<link rel="stylesheet" type="text/css" href="/css/sigin.css" />
+
+<div id="page" class="page">
+
+<?php
+/*
+
+<div id="sigin" class="section login<?php echo $this->pageclass_sfx?>">
+	<?php if ($this->params->get('show_page_heading')) : ?>
+	<h1>
+		<?php echo $this->escape($this->params->get('page_heading')); ?>
+	</h1>
+	<?php endif; ?>
+
+	<?php if (($this->params->get('logindescription_show') == 1 && str_replace(' ', '', $this->params->get('login_description')) != '') || $this->params->get('login_image') != '') : ?>
+	<div class="login-description">
+	<?php endif ; ?>
+
+		<?php if($this->params->get('logindescription_show') == 1) : ?>
+			<?php echo $this->params->get('login_description'); ?>
+		<?php endif; ?>
+
+		<?php if (($this->params->get('login_image')!='')) :?>
+			<img src="<?php echo $this->escape($this->params->get('login_image')); ?>" class="login-image" alt="<?php echo JTEXT::_('COM_USER_LOGIN_IMAGE_ALT')?>"/>
+		<?php endif; ?>
+
+	<?php if (($this->params->get('logindescription_show') == 1 && str_replace(' ', '', $this->params->get('login_description')) != '') || $this->params->get('login_image') != '') : ?>
+	</div>
+	<?php endif ; ?>
+</div>
+
+*/
+?>
+
+<?php /*
+<div id="compaign" class="carousel slide" data-interval="false">  
+      <div class="carousel-inner">
+							
+        <div class="item active">
+
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#compaign<?php echo $compaignslideid ?>" data-slide="prev"><span class="icon-arrow-left"></span></a>
+      <a class="right carousel-control" href="#compaign<?php echo $compaignslideid ?>" data-slide="next"><span class="icon-arrow-right"></span></a>
+		<ol class="carousel-indicators">
+							
+			<li data-target="#compaign<?php echo $compaignslideid ?>" data-slide-to="<?php echo $i ?>" <?php if ($i == 0) echo "class=\" active\""; ?>></li>
+	
+			</ol>
+   </div>
+	*/ ?>
+	<?php /*
+
+			<?php //АВТОРИЗАЦИЯ ЧЕРЕЗ СОЦИАЛЬНЫЕ СЕТИ ?>
+			<div id="socnetwork" class="socnetwork" >
+                    <a rel="nofollow" href="/component/slogin/provider/facebook/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-facebook"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/google/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-google__x2B_"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/mail/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-mailru"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/odnoklassniki/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-odnoklassniki"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/twitter/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-twitter-3"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/vkontakte/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-rus-vk-02"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/yandex/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-rus-yandex-02"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/linkedin/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-linkedin"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/yahoo/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-yahoo"></span></a>
+                    <a rel="nofollow" href="/component/slogin/provider/instagram/auth/aW5kZXgucGhwP0l0ZW1pZD0yOTQ="><span class="icon-instagram"></span></a><br>
+					<a  href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>"><span><?php echo JText::_('COM_USERS_REGISTER_DEFAULT_LABEL'); ?></span></a>
+
+			</div>
+
+
+	*/ ?>
+
+<div id="guest" class="section ">
+<?php
+/*	
+		<h2><?php echo JText::_('COM_USERS_SIGIN_CONNECT') ?></h2>
+	
+			<form id="login-form" class="form-inline" role="form" action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post"  role="form">
+					<div class="btn-group">					
+					<div class="input-group visible-xs">
+						<span class="input-group-addon glyphicon glyphicon-user"></span>
+						<input type="text" name="username" id="modlgn-username" value="<?php echo $field->label; ?>" class="form-control" placeholder="<?php echo JText::_('COM_USERS_LOGIN_USERNAME_LABEL') ?>">
+					</div>
+					<div class="input-group visible-xs">
+						<span class="input-group-addon glyphicon glyphicon-th"></span>
+						<input type="password" name="password" id="modlgn-passwd" value="<?php echo $field->label; ?>" class="form-control" placeholder="<?php echo JText::_('COM_USERS_FIELD_RESET_PASSWORD1_LABEL') ?>">
+					</div>
+			
+							<span class="btn btn-primary visible-xs"><input type="checkbox" class="" id="modlgn-remember" name="remember"  value="yes"/><?php echo JText::_('COM_USERS_REMEMBER_ME') ?></span>
+							<button type="submit" class="btn btn-primary visible-xs" data-toggle="modal"><?php echo JText::_('JLOGIN'); ?></button>
+							<input type="hidden" name="return" value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('return'))); ?>" />
+					
+							<?php echo JHtml::_('form.token'); ?>
+							<a  href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>" class="btn btn-warning"><?php echo JText::_('COM_USERS_REGISTER_DEFAULT_LABEL'); ?></a>
+							<a  href="<?php echo JRoute::_('index.php?option=com_virtuemart&view=category'); ?>" class="btn btn-info"><?php echo JText::_('COM_PROJECTS'); ?></a>
+
+					</div>
+			</form>
+*/
+?>			
+	
+<?php
+//require_once JPATH_BASE .  '/templates/html5/html/com_users/registration/default.php';
+//require_once JPATH_BASE . 'index.php?option=com_users&view=registration';
+?>
+
+	
+	
+	
+	
+	
+	
+		<div class="clear"></div>
+			<span class="text-center">
+				<h2><strong><?php echo JText::_('COM_USERS_SIGIN_CONNECT') ?></strong> <?php echo JText::_('COM_USERS_SIGIN_ITSEASY') ?></h2>
+				<h3><?php echo JText::_('COM_USERS_SIGIN_WELLCOME_NET') ?></h4>
+			</span>
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+	<form id="member-login" action="<?php echo JRoute::_('index.php?option=com_users&task=user.login'); ?>" method="post" id="member-login" class="form-validate">
+		<div class="btn-group-vertical">
+			<div class="form-group member-login">
+				<button id="btnformreg" type="button" class="glyphicon glyphicon-user registration"></button>
+				<span class="text-center">
+							<h3><?php echo JText::_('COM_USERS_SIGIN_LOGIN') ?></h3> 
+				</span>	
+				<fieldset>
+					<?php foreach ($this->form->getFieldset('credentials') as $field) : ?>
+						<?php if (!$field->hidden) : ?>
+									<?php //echo ($field->input='Spacer') ? $field->input : "&#160;"; ?>
+									<?php echo $field->input; ?>
+					<?php endif; ?>					
+					<?php endforeach; ?>
+				</fieldset>	
+		<?php if (count($twofactormethods) > 1): ?>
+				<div id="form-login-secretkey" class="control-group">
+
+						<?php if (!$params->get('usetext')) : ?>
+						
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-th icon-star hasTooltip" title="<?php echo JText::_('JGLOBAL_SECRETKEY'); ?>"></span>				
+								<input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="input-small" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />
+								<input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="form-control" tabindex="0" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />
+								<span class="btn width-auto hasTooltip" title="<?php echo JText::_('JGLOBAL_SECRETKEY_HELP'); ?>"><span class="icon-help"></span></span>						
+							</div>
+							
+						<?php else: ?>
+							<label for="modlgn-secretkey"><?php echo JText::_('JGLOBAL_SECRETKEY') ?></label>
+							<input id="modlgn-secretkey" autocomplete="off" type="text" name="secretkey" class="form-control" tabindex="0" size="18" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY') ?>" />
+							<span class="btn width-auto hasTooltip" title="<?php echo JText::_('JGLOBAL_SECRETKEY_HELP'); ?>">
+								<span class="icon-help"></span>
+							</span>
+						<?php endif; ?>
+
+				</div>
+		<?php endif; ?>			
+					<input type="checkbox" class="checkbox" id="checkbox" name="remember" value="yes" />
+					<label for="checkbox" class="remember"><h4><?php echo JText::_('COM_USERS_REMEMBER_ME') ?></h4></label></br>
+						<div class="btn-group">
+							<a href="<?php echo JRoute::_('index.php?option=com_users&view=remind&Itemid=' . UsersHelperRoute::getRemindRoute()); ?>" class="btn btn-link reset"><?php echo JText::_('COM_USERS_LOGIN_REMIND'); ?></a>
+							<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset&Itemid=' . UsersHelperRoute::getResetRoute()); ?>" class="btn btn-link reset"><?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
+						</div>
+				<input type="hidden" name="return" value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('index.php?option=com_community&view=frontpage'))); ?>" />
+				<input type="hidden" name="return" value="<?php echo base64_encode($this->params->get('login_redirect_url', $this->form->getValue('index.php?option=com_community&view=frontpage'))); ?>" />
+				<input type="hidden" name="option" value="com_users" />
+				<input type="hidden" name="task" value="user.login" />
+				<input type="hidden" name="return" value="<?php echo $return; ?>" />
+				<?php echo JHtml::_('form.token'); ?>
+			</div>
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-warning btn-lg submit-login"><?php echo JText::_('COM_USERS_SIGIN_AUTHORIZATION') ?></button>
+		</div>
+	</form>
+					<?php
+					// Возврат модуля с меню Регистрация и Перейти к Публикациям
+						$modules =JModuleHelper::getModules('registration-login-page');
+							foreach ($modules as $module){
+								echo JModuleHelper::renderModule($module);
+							}
+					?>
+</div>					
+<div class="col-md-2"></div>
+</div>
+				<h3 class="hidden-xs hidden-phone"><?php echo JText::_('COM_USERS_SIGIN_CONGRATS') ?></h4>
+				<h4 class="hidden-xs hidden-phone"><?php echo JText::_('COM_USERS_IS') ?></h4>
+				<h5 class="separatortop separatorbutton"><?php echo JText::_('COM_USERS_ISIS') ?></h5>			
+</div>	
+<div id="visits" class="section post">
+	<div class="bg-over">
+		<div class="promo-content">
+					<h2><?php echo JText::_('COM_USERS_SIGIN_EVERYDAY') ?></h2>
+					<span class="text-center">
+					<h3><?php echo JText::_('COM_USERS_SIGIN_ADD') ?></h3>
+					<h4><span class=""></span></h4>
+					</span>				
+			<div class="row hidden-xs hidden-print">
+			<div class="col-md-6"><div class="p-right"><?php include JPATH_BASE . '/templates/html5/fb_page.php'; ?></div></div>
+			<div class="col-md-6"><div class="p-left"><?php include JPATH_BASE . '/templates/html5/google_group.php'; ?></div></div>
+			</div>
+					<span class="text-center">
+					<h3><?php echo JText::_('COM_USERS_SUBSCRIBE') ?></h3>
+					</span>				
+					<?php
+					// Возврат модуля Подписки
+						$modules =JModuleHelper::getModules('visits-section-subscribe');
+							foreach ($modules as $module){
+								echo JModuleHelper::renderModule($module);
+							}
+					?>
+		</div>
+	</div>
+</div>
+<div id="howto" class="section post" style="">
+	<div class="bg-over">	
+		<div class="promo-content">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_HOWTO') ?></h2>
+					<span class="text-center">
+					<h3><?php echo JText::_('COM_USERS_SIGIN_HOWTO_MYFA') ?></h3>
+					<img src="/images/peoplegears.png" alt="" class="img-responsive img-label hidden-xs" style="max-width: 20em;">
+					<h4 class=""><?php echo JText::_('COM_USERS_SIGIN_HOWTO_FIRST') ?></h4>
+					</span>
+				<div class="row">
+				<div class="col-md-4 hidden-xs"></div>
+				<div class="col-md-4"><h4 class=""><?php echo JText::_('COM_USERS_SIGIN_HOWTO_UL') ?></h4></div>
+				<div class="col-md-4 hidden-xs "></div>
+				</div>
+					
+		</div>
+	</div>
+</div>
+<div id="everyday" class="section post" style="">
+	<div class="slide">	
+			<h2><?php echo JText::_('COM_USERS_SIGIN_COMMU_TITLE') ?></h2>
+					<span class="text-center">
+					<h3><?php echo JText::_('COM_USERS_SIGIN_COMMU') ?></h3>
+					<img src="/images/comm.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+					<h4><?php echo JText::_('COM_USERS_SIGIN_COMMUN') ?></h4>
+					</span>
+					
+<?php
+/*
+						<div id="likes" class="like btn btn-primary btn-lg">
+							<h2><?php echo JText::_('COM_USERS_SIGIN_LIKE') ?></h2>
+							<?php
+								$document	= &JFactory::getDocument();
+								$renderer	= $document->loadRenderer('modules');
+								$options	= array('style' => 'xhtml');
+								$position	= 'sigin-like';
+								echo $renderer->render($position, $options, null);
+							?>
+						</div>
+*/
+?>
+
+
+		</div>
+
+	<div class="slide">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_JOMSOCIAL_TITLE') ?></h2>
+			<h4><?php echo JText::_('COM_USERS_SIGIN_JOMSOCIAL') ?></h4>
+			<img src="/images/cube.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			
+	</div>
+
+</div>
+<div id="wellcome" class="section post">
+	<div class="bg-over">	
+		<div class="promo-content">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_WELLCOME') ?></h2>
+			<span class="text-center">
+			<img src="/images/hand.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h3><?php echo JText::_('COM_USERS_SIGIN_WELLCOME_TITLE') ?></h3>
+			</span>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-2"><img src="/images/pr.jpg" alt="" class="img-responsive img-circle" style="max-width: 120px;"><h6><?php echo JText::_('COM_USERS_PR') ?></h6></div>
+  <div class="col-md-2"><img src="/images/di.jpg" alt="" class="img-responsive img-circle" style="max-width: 120px;"><h6><?php echo JText::_('COM_USERS_TISHCHENKO') ?></h6></div>
+  <div class="col-md-2"><img src="/images/marketing.jpg" alt="" class="img-responsive img-circle" style="max-width: 120px;"><h6><?php echo JText::_('COM_USERS_MARKETING') ?></h6></div>
+  <div class="col-md-2"><img src="/images/content.jpg" alt="" class="img-responsive img-circle" style="max-width: 120px;"><h6><?php echo JText::_('COM_USERS_CONTENT') ?></h6></div>
+  <div class="col-md-2"></div>
+</div>
+			<h2 class="text-center"><?php echo JText::_('COM_USERS_0800') ?></h2>
+		</div>
+	</div>
+</div>
+<div id="beginners" class="section post">
+	<div class="bg-over">	
+		<div class="promo-content">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_FOR_BEGINNERS_TITLE') ?></h2>
+			<span class="text-center">
+			<img src="/images/BEGINNERS.png" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4 class=""><span><?php echo JText::_('COM_USERS_SIGIN_FOR_BEGINNERS') ?></span></h4>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="experience" class="section post">
+	<div class="slide">	
+			<h2><?php echo JText::_('COM_USERS_SIGIN_FOR_EXPERIENCE_TITLE') ?></h2>
+			<span class="text-center">
+			<img src="/images/leg.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4 class=""><?php echo JText::_('COM_USERS_SIGIN_FOR_EXPERIENCE') ?></h4>
+			</span>
+	</div>
+	<div class="slide">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_OPENSEURCE_TITLE') ?></h2>
+			<img src="/images/joomla.jpg" alt="" class="img-responsive img-circle" style="max-width: 20em;">			
+			<h4><?php echo JText::_('COM_USERS_SIGIN_OPENSEURCE') ?></h4>
+	</div>
+	<div class="slide">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_DEVELOPMENT_TITLE') ?></h2>
+			<h4><?php echo JText::_('COM_USERS_SIGIN_DEVELOPMENT') ?></h4>
+	</div>
+	<div class="slide">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_DEVELOPMENT_WORK_TITLE') ?></h2>
+			<h3 class="text-center"><?php echo JText::_('COM_USERS_SIGIN_DEVELOPMENT_WORK_TITLE1') ?></h3>
+			<h4><?php echo JText::_('COM_USERS_SIGIN_DEVELOPMENT_WORK') ?></h4>
+	</div>
+</div>
+<div id="look" class="section post">
+	<div class="bg-over">	
+		<div class="promo-content">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_LOOK_TITLE') ?></h2>
+			<span class="text-center">
+			<img src="/images/look.png" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4><?php echo JText::_('COM_USERS_SIGIN_LOOK') ?></h4>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="mission" class="section post">
+	<div class="bg-over">	
+		<div class="promo-content">		
+			<h2><?php echo JText::_('COM_USERS_SIGIN_MISSION_TITLE') ?></h2>
+			<span class="text-center">
+			<img src="/images/mission.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4 class="text-left"><?php echo JText::_('COM_USERS_SIGIN_MISSION') ?></h4>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="psiholo" class="section post">
+	<div class="bg-over">	
+		<div class="promo-content">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_PSIHO_TITLE') ?></h2>
+			<span class="text-center">
+			<img src="/images/psiholo.jpg" alt="" class="img-responsive img-circle  img-label hidden-xs" style="max-width: 20em;">		
+			<h4><?php echo JText::_('COM_USERS_SIGIN_PSIHO') ?></h4>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="focus" class="section post">
+	<div class="bg-over">	
+		<div class="promo-content">
+			<h2><?php echo JText::_('COM_USERS_SIGIN_FOCUS_TITLE') ?></h2>
+			<span class="text-left">
+			<img src="/images/focus.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4><?php echo JText::_('COM_USERS_SIGIN_FOCUS') ?></h4>
+			</span>
+		</div>
+	</div>
+</div>
+<div id="corp" class="section post">
+	<div class="slide">	
+			<h2><?php echo JText::_('COM_USERS_SIGIN_CORP_TITLE') ?></h2>
+			<span class="text-center">
+			<img src="/images/corp.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4 class=""><?php echo JText::_('COM_USERS_SIGIN_CORP') ?></h4>
+			</span>
+	</div>
+	<div class="slide">	
+			<h2><?php echo JText::_('COM_USERS_SIGIN_CORP_TITLE1') ?></h2>
+			<span class="text-center">
+			<img src="/images/csr.jpg" alt="" class="img-responsive img-circle img-label hidden-xs" style="max-width: 20em;">
+			<h4 class=""><?php echo JText::_('COM_USERS_SIGIN_CORP1') ?></h4>
+			</span>
+	</div>
+</div>
+</div>
+<?php //Подключаем плагин прелодер ?>
+<!-- <script type="text/javascript" src="http://smartresponsor.com/js/queryloader2.min.js"></script> -->
+<script type="text/javascript">
+jQuery(document).ready(function($){
+		//jQuery("body").queryLoader2();	
+            $('#page').fullpage({
+                //sectionsColor: ['', '', '', '', '', '', '', '', '', '', '', ''],
+                //(ИДшники пунктов меню) anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                //menu: '#menu',
+                //css3: true,
+				slidesNavigation: true,
+				slidesNavPosition: 'buttom',
+                scrollingSpeed: 1000,
+				navigation: true,
+				scrollOverflow: true,
+				afterLoad: function(link,index) {
+					//if(index == 1){
+					//$("#guest img").delay(2000).animate({'left':'0%'},2000);
+					//}
+					if(index == 1){
+					$("#guest h4").delay(2000).animate({'display':'block'},2000);
+					}
+				}
+				
+            });
+// tab form login & registration
+$('#btnformlogin').click(function() {
+		$('#member-registration').css('display', 'none');
+		$('#member-login').css('display', 'block');
+});
+$('#btnformreg').click(function() {
+		$('#member-registration').css('display', 'block');
+		$('#member-login').css('display', 'none');
+})
+
+// ajax submit
+/*
+$(function() {
+      $('#member-login').submit(function(e) {
+        var $form = $(this);
+        $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize()
+        }).done(function() {
+          console.log('success');
+        }).fail(function() {
+          console.log('fail');
+        });
+        //отмена действия по умолчанию для кнопки submit
+        e.preventDefault(); 
+      });
+    });
+*/
+
+//add class .form-control to input
+		$('input.inputbox').addClass('form-control');
+//slimscrool
+
+});
+
+
+
+</script>

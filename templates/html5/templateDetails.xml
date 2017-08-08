@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="template" client="site">
+    <name>Smartresponsor</name>
+    <creationDate>2013-04-01</creationDate>
+    <author>Smartresponsor</author>
+    <authorEmail>admin@smartresponsor.com</authorEmail>
+    <authorUrl>smartresponsor.com</authorUrl>
+    <copyright>Copyright (C) 2008 Smartresponsor.com</copyright>
+    <version>1.0</version>
+    <description>Smartresponsor.com</description>
+    <files>
+        <filename>index.php</filename>
+        <filename>index.html</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>favicon.ico</filename>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>html</folder>
+		<folder>language</folder>
+		<folder>bootstrap</folder>
+    </files>
+    <positions>
+
+    </positions>
+		<languages folder="language">
+		<language tag="en-GB">ru-RU/ru-RU.tpl_html5.ini</language>
+		<language tag="en-GB">ru-RU/ru-RU.tpl_html5.sys.ini</language>
+	</languages>
+</extension>

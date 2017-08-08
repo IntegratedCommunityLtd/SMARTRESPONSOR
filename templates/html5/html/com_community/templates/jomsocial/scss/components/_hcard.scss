@@ -1,0 +1,15 @@
+.joms-hcard {
+    padding: ms();
+    background: $scss-color-stream-background;
+    text-align: center;
+    width: 160px;
+    border: 1px solid $scss-color-border;
+    @extend %box-shadow;
+
+    .joms-avatar {
+        margin: 0 auto;
+        img {
+            max-width: 100px;
+        }
+    }
+}

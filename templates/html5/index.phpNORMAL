@@ -1,0 +1,169 @@
+<?php
+defined('_JEXEC') or die;
+$app				= JFactory::getApplication();
+$doc				= JFactory::getDocument();
+$user				= JFactory::getUser();
+$option   			= $app->input->getCmd('option', '');
+$view     			= $app->input->getCmd('view', '');
+$layout   			= $app->input->getCmd('layout', '');
+$task     			= $app->input->getCmd('task', '');
+$itemid   			= $app->input->getCmd('Itemid', '');
+$sitename 			= $app->getCfg('sitename');
+$this->language		= $doc->language;
+$this->direction	= $doc->direction;
+include_once( JPATH_ROOT . DS . 'components' . DS . 'com_community' . DS . 'libraries' . DS . 'core.php');
+?>
+<!DOCTYPE html>
+<html xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<jdoc:include type="head" />
+</head>
+
+<body>
+<style>
+#b1, #b4 {padding-top:5px!Important;}
+.z3-10, .z11-12, #b4 {
+	padding-right:0;
+}
+
+</style>
+<div id="wrapper">
+<div id="b0" class="navbar navbar-default navbar-fixed-top z0 top" role="navigation">
+<? include( JPATH_ROOT .'/components/com_community/templates/jomsocial/layouts/toolbar/base.php' ); ?>
+</div>	
+
+<div id="smarttop" class="row row-offcanvas row-offcanvas-left">
+	<div id="b1" class="col-sm-2 z1 visible-md visible-lg" style="margin: 0;padding:0px;">
+		<div class="navbar-collapse collapse navbar-responsive-collapse">
+		<style>
+		a#move_up {
+			position: fixed;
+			top: 0;
+			width: 100px;
+			height: 100%;
+			display: none;
+			text-align: center;
+			font: bold 12px Verdana, sans-serif;
+			text-decoration: none;
+			color: #7a7b76;
+			padding-top: 10px;
+			opacity: 0.7;
+			filter: alpha(opacity=70);
+			left: 0;
+		}
+		a#move_up:hover {
+			color: #000;
+			background: #bdbcb8;
+			opacity: 0.8; 
+			filter: alpha(opacity=80);
+		}
+		</style>
+
+			<a id="move_up" href="#"><span class="glyphicon glyphicon-chevron-up"></span> Вверх</a>
+		</div>
+	</div>
+<?php
+	$b = 1;
+	$width_main_col = 6;
+		if($this->countModules('left-panel-menu')) :
+	$b = 2;
+	$width_main_col = 5;
+ ?>
+<div id="b2" class="col-sm-1 offset2 z2" style="width:250px;padding-right: 5px;padding-left: 0;float: left;margin-right: 0;">
+	<div id="left" class="navbar-collapse collapse navbar-responsive-collapse">
+		<jdoc:include type="modules" name="left-panel-menu" style="smart" />
+	</div>
+</div>
+<?php endif; ?>
+
+<div id="b3" class="col-sm-<?php echo $width_main_col ?> z3-10">
+	<div class="sidebar-offcanvas navbar-toggle z3" id="sidebar" role="navigation" style="padding-right: 0px;padding-left: 0px;position: absolute;">
+		<div id="left">
+		<?php if($this->countModules('leftsearch')) : ?>
+		<jdoc:include type="modules" name="leftsearch" style="smart" />
+		<?php endif; ?>
+			<?php if($this->countModules('leftavatar')) : ?>
+			<jdoc:include type="modules" name="leftavatar" style="smart" />
+			<?php endif; ?>		
+				<?php if($this->countModules('leftlogin')) : ?>
+				<jdoc:include type="modules" name="leftlogin" style="smart" />
+				<?php endif; ?>
+					<?php if($this->countModules('leftpanel')) : ?>
+					<jdoc:include type="modules" name="leftpanel" style="smart" />
+					<?php endif; ?>
+						<?php if($this->countModules('left-panel-menu')) : ?>
+						<jdoc:include type="modules" name="left" style="smart" />
+						<?php endif; ?>
+							<?php if($this->countModules('leftmenuother')) : ?>
+							<jdoc:include type="modules" name="leftmenuother" style="smart" />
+							<?php endif; ?>
+								<?php if($this->countModules('hoonline')) : ?>
+								<jdoc:include type="modules" name="hoonline" style="smart" />
+								<?php endif; ?>
+									<?php // require JPATH_BASE .  '/templates/html5/placement_fb.php'; // Рекламодатели ФБ ?>
+		</div>
+	</div>
+<div id="nent">
+
+<?php //require(JPATH_ROOT.'/templates/html5/html/otherpanel.php'); ?>
+
+<jdoc:include type="message" />
+
+<jdoc:include type="component" />
+
+
+
+</div>
+
+<?php if($this->countModules('listing')) : ?>
+<jdoc:include type="modules" name="listing" />
+<?php endif; ?>
+</div>
+
+<div id="b4" class="col-sm-2 z11-12 visible-md visible-lg hidden-xs">
+	<?php if($this->countModules('right')) : ?>
+	<jdoc:include type="modules" name="right" style="smart" />
+	<?php endif; ?>
+	<jdoc:include type="modules" name="jbolo" />
+</div>
+</div>
+
+</div>
+<div class="clear"></div>
+
+<footer id="footer" class="footer">
+<div class="row hidden-phone hidden-xs" style="background-color:#F5F5F5;">
+	<div class="col-sm-1 hidden-phone hidden-xs"></div>
+	<div class="col-lg-11 z3-10 hidden-phone hidden-xs"><jdoc:include type="modules" name="breadcrumbs" /></div>
+	<div class="col-lg-1 hidden-phone hidden-xs"></div>
+</div>
+<div class="row foot">
+    <div class="col-sm-1 f1"></div>
+    <div class="col-lg-2 f2-3"><jdoc:include type="modules" name="foot2-3" /></div>
+	<div class="col-lg-2 f4-5 hidden-xs"><jdoc:include type="modules" name="foot4-5" style="smart" /></div>
+	<div class="col-lg-2 f6-7 hidden-xs"><jdoc:include type="modules" name="foot6-7" style="smart" /></div>
+	<div class="col-lg-2 f8-9 hidden-xs"><jdoc:include type="modules" name="foot8-9" style="smart" /></div>
+	<div class="col-lg-2 f10-11 hidden-xs"><jdoc:include type="modules" name="foot10-11" style="smart" />
+			<?php if($this->countModules('rightscrolltop')) : ?>
+				<jdoc:include type="modules" name="rightscrolltop" />
+			<?php endif; ?>
+	</div>
+	<div class="col-lg-1 f12"><jdoc:include type="modules" name="foot11-12" /></div>
+</div>
+<div class="row foot">
+    <div class="col-sm-1 f10"></div>
+    <div class="col-lg-2 f20-30"><jdoc:include type="modules" name="foot20-30" /></div>
+	<div class="col-lg-2 f40-50 hidden-xs"><jdoc:include type="modules" name="foot40-50" style="smart" /></div>
+	<div class="col-lg-2 f60-70 hidden-xs"><jdoc:include type="modules" name="foot60-70" style="smart" /></div>
+	<div class="col-lg-2 f80-90 hidden-xs"><jdoc:include type="modules" name="foot80-90" style="smart" /><?php //require JPATH_BASE .  '/templates/html5/vk_group.php'; // Группа в VK ?></div>
+	<div class="col-lg-2 f100-110 hidden-xs"><jdoc:include type="modules" name="foot100-110" style="smart" /></div>
+	<div class="col-lg-1 f120 hidden-xs"><jdoc:include type="modules" name="foot110-120" /></div>
+	<div class="col-lg-1 f120 hidden-xs"><?php //require JPATH_BASE .  '/templates/html5/fb_page.php'; // Страница с ФБ https://www.facebook.com/smartresponsor ?></div>
+</div>
+<jdoc:include type="modules" name="debug" />
+</footer>
+<?php require JPATH_BASE .  '/templates/html5/footer_js.php'; ?>
+</body>
+</html>
