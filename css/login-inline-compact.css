@@ -1,0 +1,134 @@
+@charset "UTF-8";
+div.slogin-clear{
+    clear: both;
+}
+
+#form-login-remember label {
+    cursor: pointer;float:none;
+}
+
+#modlgn-username.inputbox 
+{
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: #444444;
+    height: 30px;
+	width: 100%;
+    padding: 4px 6px;
+}
+.ul-jlslogin
+{
+	list-style: none outside none;
+	padding: 5px 0 0;
+	margin: 0;
+}
+
+#modlgn-passwd.inputbox 
+{
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    color: #444444;
+    height: 30px;
+    width: 100%;
+    padding: 4px 6px;
+}
+
+.login-greeting
+{
+    padding: 0 0 5px;
+}
+
+#form-login-remember label{cursor:pointer}
+
+.userdata #form-login-password label
+{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 20%;
+}
+
+.userdata #form-login-username label
+{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 20%;
+}
+#slogin-buttons {}
+
+.slogin-buttons span {}
+.slogin-buttons a, .slogin-buttons a:hover {}
+.slogin-buttons a {}
+.slogin-buttons a:hover {}
+
+.slogin-buttons .googleslogin {
+    background-position: 0 -473px;
+}
+
+.slogin-buttons .odnoklassnikislogin {
+    background-position: -51px -473px;
+}
+.slogin-buttons .vkontakteslogin {
+    background-position: 0 -525px;
+}
+.slogin-buttons .facebookslogin {
+    background-position: -66px -530px;
+}
+.slogin-buttons .mailslogin {
+    background-position: 0 -577px;
+	opacity: 0.7;
+}
+.slogin-buttons .twitterslogin {
+    background-position: -51px -577px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .yandexslogin {
+    background-position: 0px -629px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .linkedinslogin {
+    background-position: -51px -629px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .liveslogin {
+    background-position: -0px -681px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .uloginslogin {
+    background-position: -51px -681px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .yahooslogin {
+    background-position: -51px -733px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .wordpressslogin {
+    background-position: -0px -785px;
+	opacity: 0.7;
+}
+
+.slogin-buttons .instagramslogin {
+    background-position: -51px -785px;
+	opacity: 0.7;
+}
+
+.slogin-avatar{
+    text-align: center;
+}
+.slogin-avatar img{
+    border: 1px solid #c0c0c0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.slogin-buttons .twitterslogin:hover, .mailslogin:hover, .facebookslogin:hover, .vkontakteslogin:hover, .googleslogin:hover, .yandexslogin:hover, .linkedinslogin:hover, .liveslogin:hover, .uloginslogin:hover, .yahooslogin:hover, .wordpressslogin:hover, .instagramslogin:hover, .odnoklassnikislogin:hover {}

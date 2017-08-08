@@ -1,0 +1,153 @@
+/*Option Btn*/
+.joms-focus__button--options--desktop{
+position:absolute;
+top:5px;
+right:5px;
+}
+#options{
+display:block;
+position:absolute;
+top:14px;
+right:14px
+}
+#options svg{
+width: 34px;
+height: 34px;
+padding: 5px;
+position:absolute;
+right:4px;
+top:4px;
+fill:#ecf0f1;
+background:rgba(0,0,0,0.2);
+border-radius:100%;
+}
+#options a.active{
+background:rgba(0,0,0,0.6)
+}
+
+#options a.active svg{
+background:rgba(0,0,0,0.6);
+}
+
+/*Profile Avatar & Author Avatar*/
+#profile_cover .img-thumbnail, #publication .img-thumbnail{
+position:absolute;
+left:4px;
+bottom:5px;
+height:100px;
+z-index: 1;
+}
+#filesfandler img{}
+@media (max-width: 768px) {
+#profile_cover .img-thumbnail, #publication .img-thumbnail{
+height:100px;
+width:100px;
+}
+}
+/*Profile Avatar Btn*/
+#profile_avatar svg{
+display:block;
+position:absolute;
+left:15px;
+bottom:30px;
+height:35px;
+width:35px;
+fill:rgba( 0,0,0,.6);
+z-index:3;
+cursor:pointer;
+}
+@media (max-width: 768px) {
+#profile_avatar svg, #publication svg{
+height:15px;
+width:15px;
+}
+}
+/*Profile Title */
+#profile_cover h2, #publication h2 {
+position:absolute;
+width: 100%;
+padding: 8px 0px 10px 0;
+bottom:15px;
+color:#fff;
+z-index:0;
+}
+/*Profile Other Btn */
+
+#profile_cover .btn, #publication .spacer-buy-area{
+position:absolute;
+right:4px;
+bottom:16px;
+z-index:3;
+}
+
+/*li Horizontal panel unde cover*/
+.joms-focus__link{
+background: #fff;
+}
+.joms-focus__link a{
+font-size:12px;
+font-weight:bold;
+text-decoration:none
+border-left:none!Important;
+margin: 0!Important;
+padding: 0px!Important;
+}
+.joms-focus__link a:hover{
+text-decoration:none;
+background: none!Important;
+}
+.joms-focus__link li.pull-right {
+padding:0;
+border-right: 0;
+}
+.joms-focus__link li .progress {
+height: inherit;
+}
+
+/*Stream and sidebar*/
+.joms-sidebar{
+padding-left: 7px;
+display:block;
+}
+.joms-main,.joms-sidebar{
+float:right;
+display:block;
+}
+
+/*icon*/
+.joms-menu ul li a, .joms-menu--user ul li a {
+color:#000!Important;
+}
+/*icon*/
+.icon{
+display:inline-block;
+vertical-align:middle;
+width:14px;
+height:14px;
+fill:#7f8c8d;
+position:relative
+}
+.icon--responsive{
+width:100%;
+height:auto
+}
+.joms-icon--add{
+top:5px;
+right:27px;
+fill:#95a5a6
+}
+.joms-no-touch .-icon--add{
+top:24px;
+right:24px
+}
+.joms-page--inbox .joms-icon--add{
+top:14px;
+right:14px
+}
+.joms-icon--white{
+fill:white
+}
+svg:not(:root){
+overflow:hidden;
+max-width:none
+}

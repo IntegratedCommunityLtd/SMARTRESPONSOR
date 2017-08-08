@@ -1,0 +1,157 @@
+*:focus{outline:0}
+.clr{clear:both;overflow:hidden}
+.clear,br.clear{clear:both}
+div.clear{height:0;line-height:0;font-size:0;margin:0;padding:0}
+.dummy{background:0;width:5%}
+div.spacer{position:relative}
+div.spaceStyle{padding:0;margin:5px}
+.icons{text-align:right;float:right;margin:4px 0 10px 30px}
+/*.vmicon,.vmiconFE{background: url(../images/vm2-sprite.png) 0 -214px;
+height: 26px;width: 26px;opacity: 0.8;-moz-opacity: 0.8;-ms-filter: "alpha(opacity=90)"; filter: alpha(opacity=90);margin-left: -30%;margin-top: 10px;}*/
+.edit-24-grey{background: url(../images/edit-24-grey.png);background-position: center center;background-repeat: no-repeat;
+border: 2px solid #5C5C5C;border-radius: 4px;height: 30px;width: 26px;cursor: pointer;margin-top: 10px;
+margin-left: -45px;
+}
+.vm_thumb{border: 3px solid #B4B4B4;border-radius: 4px;display: block;float: left;height: 200px;overflow: hidden;position: relative;text-align: center;vertical-align: middle;max-width: 32%;margin-right: 5px;z-index: -2;padding: 2px;}
+#vm_display_image{max-width: 100px;
+margin-bottom: 5px;
+}
+
+fieldset{border:0}
+
+
+
+.ask-a-question,.manufacturer,.manufacturer-details-view .email-weblink,.manufacturer-details-view .description{margin:0 0 10px}
+.customer-reviews,.ask-a-question-view .form-field{margin:25px 0 0}
+span.variant-name,span.custom-variant-name{width:100px;float:left;display:block;margin-bottom:5px}
+.category-view .row .category .spacer,.featured-view .spacer,.latest-view .spacer,.topten-view .spacer,.recent-view .spacer,.related-products-view .spacer,.browse-view .row .product .spacer{padding:6px}
+.featured-view .spacer span,.latest-view .spacer span,.topten-view .spacer span,.recent-view .spacer span,.related-products-view .spacer span,.browse-view .row .product .spacer span{font-size:13px;color:#666}
+.browse-view .row .product .spacer img,.related-products-view .row .product .spacer img{width:auto;height:auto}
+
+span.custom-variant-inputbox input.custom-attribute:hover,span.quantity-box input.quantity-input:hover,input.vm-default:hover,span.quantity-box input.quantity-input:hover,.ask-a-question-view input.counter:hover,.ask-a-question-view input#email:hover,table.user-details input:hover,a.ask-a-question:hover,a.details:hover,div.details:hover,a.product-details:hover,button.default:hover{background:#e8e8e8 url(../images/vmgeneral/backgrounds.png) repeat-x;background-position:0 -40px;color:#000;text-decoration:none}
+#ui-tabs ul#tabs{list-style-type:none;overflow:hidden;margin:0;padding:16px 16px 0}
+#ui-tabs ul#tabs li{display:inline-block;cursor:pointer;background:#f2f2f2;padding:8px 16px 3px}
+#ui-tabs ul#tabs li.current{display:inline-block;background:#ccc;color:#444}
+#ui-tabs .tabs{padding:16px}
+#ui-tabs .dyn-tabs{overflow:auto;display:none}
+.vm-col{margin:1px;width:60%}
+.vm-col-1{width:100%}
+.vm-col-2{width:48%}
+.vm-col-3{width:31.9%}
+.vm-col-4{width:23.8%}
+.vm-col-5{width:19%}
+.vm-col-6{width:16%}
+.vm-col-8{width:12%}
+.vm-col-9{width:11%}
+.vm-col-10{width:9%}
+.vm-col-11{width:8%}
+.vm-col-12{width:7%}
+.vm2-modallink{height:16px;margin-left:3px;vertical-align:top;width:16px;display:inline-block;background:url("../images/icon_external_link.gif") no-repeat scroll left top transparent}
+.vm2-warning{background-position:0 -1383px;width:50px;height:40px}
+input.highlight-button{background:#0077b3;color:#fff;border:1px solid #00669a;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;font-size:12px;cursor:pointer;text-align:center;letter-spacing:1px;display:inline-block;text-decoration:none;padding:4px 8px 2px}
+input.highlight-button:visited{color:#fff}
+
+button.default:hover{color:#777}
+a.highlight,a.highlight:visited{background:#0077b3;border:solid #00669a 1px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;display:inline-block;text-decoration:none;background-position:0 -160px;color:#fff;padding:3px 8px 1px}
+textarea.virtuemart{background:#fff;border:solid #ccc 1px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;color:#777;text-align:left;padding:5px 5px 4px}
+
+.vm-button-correct:hover{color:#f2f2f2}
+.width1{width:1%}
+.width2{width:2%}
+.width3{width:3%}
+.width4{width:4%}
+.width5{width:5%}
+.width6{width:6%}
+.width7{width:7%}
+.width8{width:8%}
+.width9{width:9%}
+.width10{width:10%}
+.width11{width:11%}
+.width12{width:12%}
+.width13{width:13%}
+.width14{width:14%}
+.width15{width:15%}
+.width16{width:16%}
+.width17{width:17%}
+.width18{width:18%}
+.width19{width:19%}
+.width20{width:20%}
+.width21{width:21%}
+.width22{width:22%}
+.width23{width:23%}
+.width24{width:24%}
+.width25{width:25%}
+.width26{width:26%}
+.width27{width:27%}
+.width28{width:28%}
+.width29{width:29%}
+.width30{width:30%}
+.width31{width:31%}
+.width32{width:32%}
+.width33{width:33%}
+.width34{width:34%}
+.width35{width:35%}
+.width36{width:36%}
+.width37{width:37%}
+.width38{width:38%}
+.width39{width:39%}
+.width40{width:40%}
+.width41{width:41%}
+.width42{width:42%}
+.width43{width:43%}
+.width44{width:44%}
+.width45{width:45%}
+.width46{width:46%}
+.width47{width:47%}
+.width48{width:48%}
+.width49{width:49%}
+.width50{width:50%}
+.width51{width:51%}
+.width52{width:52%}
+.width53{width:53%}
+.width54{width:54%}
+.width55{width:55%}
+.width56{width:56%}
+.width57{width:57%}
+.width58{width:58%}
+.width59{width:59%}
+.width60{width:60%}
+.width61{width:61%}
+.width62{width:62%}
+.width63{width:63%}
+.width64{width:64%}
+.width65{width:65%}
+.width66{width:66%}
+.width67{width:67%}
+.width68{width:68%}
+.width69{width:69%}
+.width70{width:70%}
+.width71{width:71%}
+.width72{width:72%}
+.width73{width:73%}
+.width74{width:74%}
+.width75{width:75%}
+.width76{width:76%}
+.width77{width:77%}
+.width78{width:78%}
+.width79{width:79%}
+.width81{width:81%}
+.width82{width:82%}
+.width83{width:83%}
+.width84{width:84%}
+.width85{width:85%}
+.width86{width:86%}
+.width87{width:87%}
+.width88{width:88%}
+.width89{width:89%}
+.width90{width:90%}
+.width91{width:91%}
+.width92{width:92%}
+.width93{width:93%}
+.width94{width:94%}
+.width95{width:95%}
+.width96{width:96%}
+.width97{width:97%}
+.width98{width:98%}
+.width99{width:99%}
+.width100{width:100%}

@@ -1,0 +1,16 @@
+/*bb*/
+.pluginButtonContainer{
+	padding:10px 0;
+}
+.pluginButtonIcon{
+	padding:5px;
+	margin:0;
+}
+.pluginButton, #vk_like iframe{
+	height: 40px;
+	border-radius:0;
+}
+.pluginButtonLabel{
+	border-left: solid 1px;
+}
+/*vk*/
