@@ -6,3 +6,4 @@ images/avatar
 images/*
 logs/
 tmp/
+cache/
