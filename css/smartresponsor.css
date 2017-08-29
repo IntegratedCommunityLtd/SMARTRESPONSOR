@@ -510,7 +510,6 @@ li a.nav-ava {padding:0; margin:0;}
 	z-index: 10;
 	left: 5px;
 	bottom:5px;
-	box-shadow: 0 0 1px #666;
 	border-radius: 5px;
 }
 
@@ -551,7 +550,7 @@ div.spacer a {
 	-webkit-box-shadow: -1px 1px 3px 0px rgba(189,189,189,1);
 	-moz-box-shadow: -1px 1px 3px 0px rgba(189,189,189,1);
 	box-shadow: -1px 1px 3px 0px rgba(189,189,189,1);
-	z-index:1;
+	z-index:3;
 	}
 .featur:hover {
 	background-color: green;
@@ -578,9 +577,9 @@ div.spacer a {
 .browse, .spacer  {display: block;float: left;border-radius: 3px;}
 .projects, .spacer, {display: block;float: left;overflow: hidden;}
 div.browsecellwidth  div.compaign-avatar,{border-radius: 3px 3px 0px 0;min-height: 100px;background-size: contain;background-repeat: no-repeat;background-position: center;}
-.compaign-avatar {width: 100%;min-height: 150px;background-size: contain;background-repeat: no-repeat;background-position: center;
+.compaign-avatar {width: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;
 }
-.compaign-name {min-height: 30px;*border-radius: 0px 10px 3px 0px;*	-webkit-border-radius: 0px 10px 3px 0px;*-moz-border-radius: 0px 10px 3px 0px;left: 0px;top: 17px;*max-width:97%;max-height: 50px;overflow: hidden;box-sizing:border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;color:#3A3A3A;padding: 0px 15px 0px;}
+.compaign-name {min-height: 30px;*border-radius: 0px 10px 3px 0px;*	-webkit-border-radius: 0px 10px 3px 0px;*-moz-border-radius: 0px 10px 3px 0px;left: 0px;top: 17px;max-height: 50px;overflow: hidden;box-sizing:border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;color:#3A3A3A;padding: 0px 15px 0px;}
 .compaign-name:hover .product-details{opacity: 1;}
 .compaign-name:hover{background: rgba(0, 0, 0, 0.3);}
 .iii {position:relative;margin: 0 auto;transition: background 150ms;}
@@ -597,9 +596,6 @@ div.browsecellwidth  div.compaign-avatar,{border-radius: 3px 3px 0px 0;min-heigh
 .separatorbutton {border-bottom: solid 1px #eee;}
 
 .browsecellwidth:hover {box-shadow: 0 0 10px #94d9ff;}
-.infoofcompaign {margin-right: 5px;line-height: 1.4em;}
-
-
 .cPagination {padding: 5px;}
 .cPagination ul li {display:inline;border:none;}
 .footer ul li {border:none;}
@@ -730,3 +726,21 @@ div.joms-form__group{
 	padding-left:0 !important;
 	padding-right:0 !important;
 }
+.joms-stream__body>div{
+	width:100% !important;
+}
+	
+.vinet{
+	background:rgba(0,0,0, 0.7);
+	z-index:3000;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.member-log{
+	position:fixed;
+	top:20%;
+	z-index:3330;
+}	

@@ -1,336 +1,336 @@
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-font-weight: 100;
-}
-h2 {
-
-}
-h3 {
-font-size: 3.5em;
-}
-h4 {
-font-size: 2em;
-margin:auto;
-}
-#member-login a {padding:0;}
-#member-registration .btn-group-vertical, #member-login .btn-group-vertical {
-border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
--webkit-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
--moz-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
-}
-.member-registration, .member-login {
-	background-color: #546e7a;
-	padding: 10px 20px;
-	border-radius: 10px 10px 0px 0px;
-	-moz-border-radius: 10px 10px 0px 0px;
-	-webkit-border-radius: 10px 10px 0px 0px;
-	margin-bottom: 0px;
-	}
-.submit-registration, .submit-login {
-	border-radius: 0px 0 10px 10px!Important;
-	-webkit-border-radius: 0px 0 10px 10px!Important;
-	-moz-border-radius: 0px 0 10px 10px!Important;
-	height: 50px;
-}	
-.member-registration .form-control, .member-login .form-control {
-    font-size: 2em;
-}
-.member-registration .login, .member-login .registration {
-	border: none;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	padding: 15px 10px 25px 25px;
-	border-radius: 0px 10px 0px 100%;
-	-moz-border-radius: 0px 10px 0px 100%;
-	-webkit-border-radius: 0px 10px 0px 100%;
-	font-size: 2em;
-	color: #546e7a;
-}
-@media (max-width: 768px){
-.member-registration .login, .member-login .registration {
-	padding: 10px 5px 20px 20px;
-	font-size: 1em;
-}
-#fp-nav {display:none!important;}
-}
-
-
-#login-form .glyphicon {top:0!important;}
-#login-form input[type="checkbox"] {margin:0 4px;}
-#socnetwork span {;color:#fff;padding:10px 3px;}
-
-
-#page {
-    color: #333534;
-    *font-family: "Segoe UI Local","Segoe WP","Segoe UI Web",Tahoma,"Helvetica Neue",Helvetica,"Meiryo UI",Meiryo,Arial Unicode MS,sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    font-weight: 100;
-    line-height: 1.25em;
-}
-
-.fp-tableCell {
-	margin:auto;
-	padding:0.1em 10px;
-	background-color: rgba(255, 255, 255, 0.22);
-	display:block;
-	max-width:75%;	
-}
-.fp-slides {
-	margin:auto;
-	display:block;
- }
-
-.fp-slidesNav {
-	bottom: 1em;
-}
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-	background: #F3F3F3 none repeat scroll 0% 0%;
-}
-
-
-#page img.pull-right, #page img.pull-left{
-	max-width:30%;
-	shape-outside: inset(0% round 50%);
-}
-.socnetwork {background-color: rgba(228, 228, 228, 0.25);float:right;padding: 10px;position: absolute;right: 0;font-size: 1.3em;}
-
-#guest, #everyday, #visits, #howto, #wellcome, #beginners, #experience, #look, #mission, #psiholo, #focus, #corp{width: 100%;position:relative;}
-#guest div.bg-over{
-	*background: rgba(1, 16, 35, 0.38);
-	height:100%;
-}
-#everyday div.bg-over{
-	*background: rgba(0, 0, 0, 0.39);
-}
-#visits div.bg-over{
-}
-#visits div.like {
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
-#howto div.bg-over{}
-#wellcome div.bg-over{}
-#beginners div.bg-over{}
-.promo-content{
-	*padding: 30px;
-}
-#guest{
-	background-color: #663C2C;
-	background: linear-gradient(
-      rgba(102, 60, 44, 0.82), 
-      rgba(102, 60, 44, 0.82)
-    ),url(/images/IMG_04291.jpg) no-repeat;
-	background-position: right top;	
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height:469px;
-	color: #fefefe;
-	background-attachment:fixed;
-    background-position:center; 
-}
-
-
-fieldset button.btn{
-	line-height: 0.428571;
-}
-
-
-#modlgn-username{width:100%;}
-#modlgn-passwd{width:100%;}
-
-
-
-/**/
-#visits{
-	background: #2B417A;
-    color: #EAE7E7;
-}
-#visits div.btn-lg, #everyday div.btn-lg  {
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	background: rgb(10, 53, 78);
-}
-#visits div.btn-lg a {
-	color:#fff;
-}
-#fb-googl {
-webkit-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
--moz-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
-background-color: #fff;
-}
-
-#howto{
-	background: #026265;
-	color:#fff;
-}
-#everyday{
-	background: rgb(17, 194, 234);
-	color:#fff;
-}
-#congrats{
-	position:absolute;
-	bottom:0;
-	max-width: 750px;
-	-moz-hyphens: auto;
-	word-wrap: break-word;
-}
-#wellcome{
-	background: rgb(88, 41, 121);
-	color: #D3F3F0;
-}
-#beginners{
-	background:rgb(181, 141, 105);
-	color:#fff;
-}
-#experience{
-	background:rgb(36, 69, 124);
-    color: #fff;
-}
-#look{
-	background:#4978A2;
-    color: #fff;
-}
-#mission{
-	background:#8B9D2F;
-	color: #fff;
-}
-#psiholo{
-	background: #262720;
-    color: #CAC0C0;
-}
-#focus{
-	background: #46BAE7;
-	color: #fff;
-}
-#corp{
-	background:#4A545F;
-	color: #fff;
-}
-/**/
-@media (max-width: 768px) {
-#page h4{
-	font-size:11px;
-}
-#page h3{
-	*zoom: 0.69;
-	font-size:18px;
-}
-#page h2{
-	font-size:24px;
-}
-#guest{
-	height:inherit;
-}
-.socnetwork {
-	float:none!important;
-	position: relative;
-}
-#congrats {
-	position:relative;
-    font-size: 11px;
-}
-
-fieldset div.input-group, fieldset div.form-group{
-	margin: 0 auto;
-	text-align: center;
-	display: inline-block;
-}
-#footer ul li a {
-	line-height: 2;
-}
-}
-@media (max-width: 756px) {
-.input-group-btn {
-	display: -moz-groupbox;
-	width: 100%;
-	text-align: left;	
-}
-.modlgn-remember {
-margin: 1px 0px;
-pointer-events:;
-}
-.fp-controlArrow.fp-next  {
-	border-width: 19.5px 0px 19.5px 17px;
-	right: 10px;
-}
-.fp-controlArrow.fp-prev {
-	border-width: 19.5px 17px 19.5px 0px;
-	left: 10px;
-}
-.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next  {
-	top:50px;
-	display:none;
-}
-.slimScrollBar {
-	display: none !important;
-}
-#login-form .input-group, #login-form .btn {
-	margin: 0.1em 0;
-}
-#login-form .btn {
-	width: 100%;
-}
-#member-registration, #member-login {
-	margin: 2px;
-	padding: 3px;
-	}
-#member-registration .form-control, #member-login .form-control {
-    font-size: 1em;
-}
-}
-@media (min-width: 756px) {
-h3, h4 {
-	max-width:100%;
-	margin: auto;
-}
-.fp-tableCell {
-	padding:0.1em 40px;
-}
-}
-@media (min-width: 1200px) {
-.bg-over {
-	max-width:1100px;
-}
-.fp-slides, .fp-tableCell, .promo-content{
-	max-width:1000px;
-}
-h3, h4 {
-	max-width:800px;
-	margin: auto;
-}
-}
-@media (min-width: 1600px) {
-.bg-over {
-	max-width:1300px;
-}
-.fp-slides, .fp-tableCell, .promo-content{
-	max-width:1200px;
-}
-h3, h4 {
-	max-width:1000px;
-	margin: auto;
-}
-}
-@media (min-width: 1900px) {
-.bg-over {
-	max-width:1800px;
-}
-.fp-slides, .fp-tableCell, .promo-content{
-	max-width:1600px;
-}
-h3, h4, h5 {
-	max-width:1200px;
-	margin: auto;
-}
-h5 {font-size: 1.3em;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-weight: 100;
+}
+h2 {
+
+}
+h3 {
+font-size: 3.5em;
+}
+h4 {
+font-size: 2em;
+margin:auto;
+}
+#member-login a {padding:0;}
+#member-registration .btn-group-vertical, #member-login .btn-group-vertical {
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
+box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
+}
+.member-registration, .member-login {
+	background-color: #546e7a;
+	padding: 10px 20px;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	margin-bottom: 0px;
+	}
+.submit-registration, .submit-login {
+	border-radius: 0px 0 10px 10px!Important;
+	-webkit-border-radius: 0px 0 10px 10px!Important;
+	-moz-border-radius: 0px 0 10px 10px!Important;
+	height: 50px;
+}	
+.member-registration .form-control, .member-login .form-control {
+    font-size: 2em;
+}
+.member-registration .login, .member-login .registration {
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 15px 10px 25px 25px;
+	border-radius: 0px 10px 0px 100%;
+	-moz-border-radius: 0px 10px 0px 100%;
+	-webkit-border-radius: 0px 10px 0px 100%;
+	font-size: 2em;
+	color: #546e7a;
+}
+@media (max-width: 768px){
+.member-registration .login, .member-login .registration {
+	padding: 10px 5px 20px 20px;
+	font-size: 1em;
+}
+#fp-nav {display:none!important;}
+}
+
+
+#login-form .glyphicon {top:0!important;}
+#login-form input[type="checkbox"] {margin:0 4px;}
+#socnetwork span {;color:#fff;padding:10px 3px;}
+
+
+#page {
+    color: #333534;
+    *font-family: "Segoe UI Local","Segoe WP","Segoe UI Web",Tahoma,"Helvetica Neue",Helvetica,"Meiryo UI",Meiryo,Arial Unicode MS,sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.25em;
+}
+
+.fp-tableCell {
+	margin:auto;
+	padding:0.1em 10px;
+	background-color: rgba(255, 255, 255, 0.22);
+	display:block;
+	max-width:75%;	
+}
+.fp-slides {
+	margin:auto;
+	display:block;
+ }
+
+.fp-slidesNav {
+	bottom: 1em;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: #F3F3F3 none repeat scroll 0% 0%;
+}
+
+
+#page img.pull-right, #page img.pull-left{
+	max-width:30%;
+	shape-outside: inset(0% round 50%);
+}
+.socnetwork {background-color: rgba(228, 228, 228, 0.25);float:right;padding: 10px;position: absolute;right: 0;font-size: 1.3em;}
+
+#guest, #everyday, #visits, #howto, #wellcome, #beginners, #experience, #look, #mission, #psiholo, #focus, #corp{width: 100%;position:relative;}
+#guest div.bg-over{
+	*background: rgba(1, 16, 35, 0.38);
+	height:100%;
+}
+#everyday div.bg-over{
+	*background: rgba(0, 0, 0, 0.39);
+}
+#visits div.bg-over{
+}
+#visits div.like {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#howto div.bg-over{}
+#wellcome div.bg-over{}
+#beginners div.bg-over{}
+.promo-content{
+	*padding: 30px;
+}
+#guest{
+	background-color: #663C2C;
+	background: linear-gradient(
+      rgba(102, 60, 44, 0.82), 
+      rgba(102, 60, 44, 0.82)
+    ),url(/images/IMG_04291.jpg) no-repeat;
+	background-position: right top;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:469px;
+	color: #fefefe;
+	background-attachment:fixed;
+    background-position:center; 
+}
+
+
+fieldset button.btn{
+	line-height: 0.428571;
+}
+
+
+#modlgn-username{width:100%;}
+#modlgn-passwd{width:100%;}
+
+
+
+/**/
+#visits{
+	background: #2B417A;
+    color: #EAE7E7;
+}
+#visits div.btn-lg, #everyday div.btn-lg  {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: rgb(10, 53, 78);
+}
+#visits div.btn-lg a {
+	color:#fff;
+}
+#fb-googl {
+webkit-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
+box-shadow: 0px 0px 5px 0px rgba(110,110,110,1);
+background-color: #fff;
+}
+
+#howto{
+	background: #026265;
+	color:#fff;
+}
+#everyday{
+	background: rgb(17, 194, 234);
+	color:#fff;
+}
+#congrats{
+	position:absolute;
+	bottom:0;
+	max-width: 750px;
+	-moz-hyphens: auto;
+	word-wrap: break-word;
+}
+#wellcome{
+	background: rgb(88, 41, 121);
+	color: #D3F3F0;
+}
+#beginners{
+	background:rgb(181, 141, 105);
+	color:#fff;
+}
+#experience{
+	background:rgb(36, 69, 124);
+    color: #fff;
+}
+#look{
+	background:#4978A2;
+    color: #fff;
+}
+#mission{
+	background:#8B9D2F;
+	color: #fff;
+}
+#psiholo{
+	background: #262720;
+    color: #CAC0C0;
+}
+#focus{
+	background: #46BAE7;
+	color: #fff;
+}
+#corp{
+	background:#4A545F;
+	color: #fff;
+}
+/**/
+@media (max-width: 768px) {
+#page h4{
+	font-size:11px;
+}
+#page h3{
+	*zoom: 0.69;
+	font-size:18px;
+}
+#page h2{
+	font-size:24px;
+}
+#guest{
+	height:inherit;
+}
+.socnetwork {
+	float:none!important;
+	position: relative;
+}
+#congrats {
+	position:relative;
+    font-size: 11px;
+}
+
+fieldset div.input-group, fieldset div.form-group{
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+}
+#footer ul li a {
+	line-height: 2;
+}
+}
+@media (max-width: 756px) {
+.input-group-btn {
+	display: -moz-groupbox;
+	width: 100%;
+	text-align: left;	
+}
+.modlgn-remember {
+margin: 1px 0px;
+pointer-events:;
+}
+.fp-controlArrow.fp-next  {
+	border-width: 19.5px 0px 19.5px 17px;
+	right: 10px;
+}
+.fp-controlArrow.fp-prev {
+	border-width: 19.5px 17px 19.5px 0px;
+	left: 10px;
+}
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next  {
+	top:50px;
+	display:none;
+}
+.slimScrollBar {
+	display: none !important;
+}
+#login-form .input-group, #login-form .btn {
+	margin: 0.1em 0;
+}
+#login-form .btn {
+	width: 100%;
+}
+#member-registration, #member-login {
+	margin: 2px;
+	padding: 3px;
+	}
+#member-registration .form-control, #member-login .form-control {
+    font-size: 1em;
+}
+}
+@media (min-width: 756px) {
+h3, h4 {
+	max-width:100%;
+	margin: auto;
+}
+.fp-tableCell {
+	padding:0.1em 40px;
+}
+}
+@media (min-width: 1200px) {
+.bg-over {
+	max-width:1100px;
+}
+.fp-slides, .fp-tableCell, .promo-content{
+	max-width:1000px;
+}
+h3, h4 {
+	max-width:800px;
+	margin: auto;
+}
+}
+@media (min-width: 1600px) {
+.bg-over {
+	max-width:1300px;
+}
+.fp-slides, .fp-tableCell, .promo-content{
+	max-width:1200px;
+}
+h3, h4 {
+	max-width:1000px;
+	margin: auto;
+}
+}
+@media (min-width: 1900px) {
+.bg-over {
+	max-width:1800px;
+}
+.fp-slides, .fp-tableCell, .promo-content{
+	max-width:1600px;
+}
+h3, h4, h5 {
+	max-width:1200px;
+	margin: auto;
+}
+h5 {font-size: 1.3em;}
 }

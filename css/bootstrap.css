@@ -2316,6 +2316,7 @@ input[type="checkbox"] {
 }
 input[type="file"] {
   display: block;
+  padding: 5px 5px;
 }
 input[type="range"] {
   display: block;
@@ -2343,7 +2344,7 @@ output {
   display: block;
   width: 100%;
   min-width: 30px;
-  padding: 7.5px 8px;
+  padding: 7px 8px;
   font-size: 14px;
   line-height: 1.4;
   color: rgba(0, 128, 128, 0.8);
@@ -3100,6 +3101,7 @@ fieldset[disabled] .btn-link:focus {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 0px;
+  border:none;
 }
 .btn-sm,
 .btn-group-sm > .btn {
@@ -3559,6 +3561,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: rgba(0, 128, 128, 0.3);
   border: 0px solid rgba(0, 128, 128, 0.8);
   border-radius: 0px;
+  box-shadow: 0 0 0 white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
@@ -3623,7 +3626,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .btn-group {
-  margin-left: -1px;
+  margin-left: 0;
 }
 .nav {
   margin-bottom: 0;
@@ -3927,10 +3930,13 @@ padding: 7px 0;
 }
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 10px 15px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
+  width: 150px;
+  font-variant: initial;
+font-weight: 100;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4560,7 +4566,7 @@ a.label:focus {
   white-space: nowrap;
   text-align: center;
   background-color: #23a3a3;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .badge:empty {
   display: none;

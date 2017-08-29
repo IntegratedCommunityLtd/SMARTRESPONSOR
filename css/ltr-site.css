@@ -85,10 +85,9 @@ span.variant-dropdown select{width:150px;}
 span.custom-variant-inputbox{width:152px;float:left;display:block;margin-bottom:5px;}
 input.custom-attribute{width:140px;}
 .progress{margin-bottom: 5px;}
-.addtocart-area{}
 .quantity-box, span.quantity-box{overflow: hidden;}
 .quantity-plus, .quantity-minus{padding: 0;}
-input.quantity-input{border-radius: 0px 0px 0px 3px;}
+
 span.quantity-controls{*width:40px;*height:40px;}
 span.quantity-controls input.quantity-controls{border:none;width:95px;cursor:pointer;display: -webkit-inline-box;width: 35%;}
 span.quantity-controls input.quantity-plus{height: 45px;width: 20%;background: rgba(0, 148, 136, 0.36) url(/images/plus.png) no-repeat center!important;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.11);}
