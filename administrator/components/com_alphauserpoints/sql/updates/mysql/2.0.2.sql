@@ -1,1 +1,0 @@
-ALTER TABLE #__alpha_userpoints_rules ADD `displayactivity` tinyint(1) NOT NULL DEFAULT '1';
