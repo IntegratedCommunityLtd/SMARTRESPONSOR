@@ -3,7 +3,7 @@ htaccess.txt
 .gitignore
 .txt
 configuration.php
-images/avatar/*
+*images/avatar/*
 images/avatar
 images/*
 logs/
