@@ -1,0 +1,346 @@
+<link rel="stylesheet" href="http://1.smartresponsor.com//components/com_virtuemart_smartresponsor/assets/css/vm-ltr-site.css" type="text/css" />
+gbgghghgh
+
+<?php defined('_JEXEC') or die('Restricted access');
+
+
+// Separator
+$verticalseparator = " vertical-separator";
+
+foreach ($this->products as $type => $productList ) {
+// Calculating Products Per Row
+$products_per_row = VmConfig::get ( 'homepage_products_per_row', 3 ) ;
+$cellwidth = ' span'.floor ( 12 / $products_per_row );
+
+// Category and Columns Counter
+$col = 1;
+$nb = 1;
+
+$productTitle = JText::_('COM_VIRTUEMART_'.$type.'_PRODUCT')
+
+?>
+
+<div class="<?php echo $type ?>-view">
+
+	<h2><?php echo $productTitle ?></h2>
+
+<?php // Start the Output
+
+foreach ( $productList as $product ) {
+
+	// Show the horizontal seperator
+	if ($col == 1 && $nb > $products_per_row) { ?>
+	<div class="horizontal-separator"></div>
+	<?php }
+
+	// this is an indicator wether a row needs to be opened or not
+	if ($col == 1) { ?>
+	<div class="row-fluid">
+	<?php }
+
+	// Show the vertical seperator
+	if ($nb == $products_per_row or $nb % $products_per_row == 0) {
+		$show_vertical_separator = ' ';
+	} else {
+		$show_vertical_separator = $verticalseparator;
+	}
+
+		// Show Products ?>
+		<!--  ¿–“Œ◊ ¿ ¬  ¿“≈√Œ–»» -->
+<div style="<?php echo $Browsecellwidth; ?>%;<?php $r = rand(16,255); $g = rand(16,255); $b = rand(16,255); ?>background:rgba(<?php echo "$r, $g, $b"; ?>, 0.2)" class="browsecellwidth">
+					<div class="compaign-name" style="<?php $rn = rand(16,255); $gn = rand(16,255); $bn = rand(16,255); ?>background:rgba(<?php echo "$rn, $gn, $bn"; ?>, 0.3);">
+						<h6><?php echo $product->product_name; ?></h6>
+					</div>
+				<div class="holder-compaign-avatar">
+					<div class="slider">
+						<div class="slides">
+							<?php
+							$count_images 	= count ($product->images);
+							if ($count_images > 10) {
+							for ($i = 1; $i < 10; $i++) {
+								$img		= $product->images[$i];
+						   ?> 
+							<div class="slide">
+								<a href="/<?php echo $product->images[$i]->file_url ?>" alt="<?php echo $product->product_name ?>"data-lightbox="roadtrip[<?php echo $product->product_name ?>]" tite="<?php echo $product->product_s_desc ?>" data-title="<?php echo $product->product_s_desc ?>">
+									<img src="/<?php echo $product->images[$i]->file_url ?>" class="compaign-avatar">
+								</a>
+							</div>
+							<?php
+							}
+							} else {
+							for ($i = 0; $i < $count_images; $i++) {
+								$img 			= $product->images[$i];
+								?> 
+							<div class="slide">
+								<a href="/<?php echo $product->images[$i]->file_url ?>" alt="<?php echo $product->product_name ?>"data-lightbox="roadtrip[<?php echo $product->product_name ?>]" tite="<?php echo $product->product_s_desc ?>" data-title="<?php echo $product->product_s_desc ?>">
+									<img src="/<?php echo $product->images[$i]->file_url ?>" class="compaign-avatar">
+								</a>
+							</div>
+							<?php
+							}
+							}
+							?>
+						</div>
+					</div>
+					<script>
+						$('.slider').glide({
+						autoplay: false,
+						arrows: true,
+						nav: true,
+						navCenter: false,
+						});
+					</script>
+				</div>
+<!-- ÕŒÃ»Õ¿À€ —œŒÕ—Œ–¿ -->
+<table class="table-info">
+	<tbody>
+		<tr>
+			<td><a style="" href="<?php echo ($product->manufacturer_link); ?>"><?php echo ($product->mf_name); ?></a></td>
+			<td><a style="" href="<?php echo ($product->vendor_link); ?>"><?php echo ($product->vendor_name); ?></a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><?php echo JText::_ ( 'COM_VIRTUEMART_PRODUCT_FORM_CREATION_DATE' );?></td>
+			<td><?php echo ($product->cdate); ?></h6></td>
+		</tr>
+		<tr>
+			<td><?php echo JText::_ ( 'COM_VIRTUEMART_CART_PRICE' );?></td>
+			<td><?php echo round($product->product_price,0); ?></td>
+		</tr>
+		<tr>
+			<td><?php echo JText::_ ( 'COM_VIRTUEMART_PRODUCT_UNITS_IN_BOX' );?></td>
+			<td><?php echo ($product->product_in_stock); ?></td>
+		</tr>
+	</tbody>
+</table>
+<!-- ÕŒÃ»Õ¿À€ —œŒÕ—Œ–¿ -->
+<!-- “¿–√≈“ ¡¿– -->
+<?php
+	$product_sales = $product->product_sales;
+	$product_in_stock = $product->product_in_stock;
+	$tofinish = 100 * $product_sales / $product_in_stock;
+?>
+<table class="table-infos">
+	<tbody>
+		<tr>
+			<td style="width: 33.3333333333333%;padding: 15px;">
+				<?php echo $product_sales; ?>
+			</td>
+			<td style="width: 33.3333333333333%;padding: 15px;">
+				<?php echo JText::_ ( 'COM_VIRTUEMART_PRODUCT_SALES' );?>:
+			</td>
+			<td style="width: 33.3333333333333%;text-align: right;padding: 15px;">
+				% <b><?php echo round($tofinish,0); ?></b>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div style="display: inline-block;position: absolute;width: 100%;top: 390px;color: #fff;left:0px;">
+	<div style="background:none repeat scroll 0% 0% rgba(255, 255, 255, 0.62);height: 12px;width: 100%;position: relative;z-index: 1;">
+	</div>
+		<div style="z-index: 13;position: relative;top: -12px;height: 12px;margin-left: 0px;border-radius: 0px;width:<?php echo $tofinish; ?>px;min-width:10px;max-width:99%;" class="progress">
+		</div>
+</div>
+<!-- ƒŒ¡¿¬»“‹ ¬ œŒ–”◊≈Õ»≈ -->
+<div style="width: 100%;display: inline-block;position: absolute;top: 320px;left: 0px;">
+	<div class="addtocart-bar-category">
+						<?php // Display the quantity box
+			$stockhandle = VmConfig::get ('stockhandle', 'none');
+							if (($stockhandle == 'disableit' or $stockhandle == 'disableadd') and ($product->product_in_stock - $product->product_ordered) < 1) {
+						?>
+							<a href="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&layout=notify&virtuemart_product_id=' . $product->virtuemart_product_id); ?>" class="send_me_n">
+								<?php echo JText::_ ('COM_VIRTUEMART_CART_NOTIFY') ?>
+							</a>
+
+						<?php
+							} else {
+						//echo $rowsHeight[$row]['customs'] ?>
+								<div class="vm3pr-<?php echo $rowsHeight[$row]['customfields'] ?>"> <?php
+										echo shopFunctionsF::renderVmSubLayout('addtocart',array('product'=>$product,'rowHeights'=>$rowsHeight[$row])); ?>
+								</div>
+						<?php 
+							}
+						?>
+	</div>
+</div>
+</div><!--  ¿–“Œ◊ ¿ ¬  ¿“≈√Œ–»»  ÓÌÂˆ-->
+		
+		
+		<div class="product floatleft<?php echo $cellwidth . $show_vertical_separator ?>">
+		‡‚‡‚‡‚‡‚‡‚‡‚‡‚‡
+			<div class="spacer ">
+				<div class="product-header">
+					<h3  class="title pull-left">
+						<?php // Product Name
+						echo JHTML::link ( JRoute::_ ( 'index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' . $product->virtuemart_category_id, FALSE ), $product->product_name, array ('title' => $product->product_name ) ); ?>
+					</h3>
+					<div class="price pull-left">
+						<?php
+							if (VmConfig::get ( 'show_prices' ) == '1') {
+								echo $this->currency->createPriceDiv( 'salesPrice', '', $product->prices );
+							}	
+						?>
+					</div>
+				</div>
+				
+				<div class="product-content">
+					<div class="product-content-inner">
+						
+						<div class="product-front">
+							<div class="product-img">
+								<?php // Product Image
+								if ($product->images) {
+									echo JHTML::_ ( 'link', JRoute::_ ( 'index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' . $product->virtuemart_category_id, FALSE ), $product->images[0]->displayMediafull( 'class="featuredProductImage" border="0"',true ) );
+								}
+								?>
+							</div>
+						</div>
+						
+						<div class="product-back">
+							<?php // Product Short Description
+								if (!empty($product->product_s_desc)) {
+									?>
+								<div class="desc">
+									<?php echo shopFunctionsF::limitStringByWord ($product->product_s_desc, 250, '...') ?>
+								</div>
+							<?php } ?>
+							
+							<div class="vote-rating">
+							 <?php // Product Rating
+								$products = VmModel::getModel('product');
+								$ratingModel = VmModel::getModel('ratings');
+								$product->showRating = $ratingModel->showRating($product->virtuemart_product_id);
+								if ($product->showRating) {
+									 $product->vote = $ratingModel->getVoteByProduct($product->virtuemart_product_id);
+									 $product->rating = $ratingModel->getRatingByProduct($product->virtuemart_product_id);
+									 $maxrating = VmConfig::get('vm_maximum_rating_scale', 5);
+
+									 if (empty($product->rating)) {
+								?>
+									 <span class="vote"><?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . JText::_('COM_VIRTUEMART_UNRATED') ?></span>
+									 <?php } else { ?>
+									 <span class="vote">
+									
+										<span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . $product->rating->rating . '/' . $maxrating) ?>" class="vmicon vm2-stars<?php echo round($product->rating->rating); ?>" style="display:inline-block;">
+										</span>
+									 </span>
+									 <?php } ?>
+								<?php }?>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>	
+				
+				<div class="addtocart-area">
+					<form method="post" class="product" action="<?php echo JRoute::_ ('index.php'); ?>">
+						<?php // Product custom_fields
+						
+						/* Product custom Childs
+							 * to display a simple link use $field->virtuemart_product_id as link to child product_id
+							 * custom_value is relation value to child
+							 */
+				
+						if (!empty($product->customsChilds)) {
+							?>
+							<div class="product-fields">
+								<?php foreach ($product->customsChilds as $field) { ?>
+								<div class="product-field product-field-type-<?php echo $field->field->field_type ?>">
+									<span class="product-fields-title"><strong><?php echo JText::_ ($field->field->custom_title) ?></strong></span>
+									<span class="product-field-desc"><?php echo JText::_ ($field->field->custom_value) ?></span>
+									<span class="product-field-display"><?php echo $field->display ?></span>
+				
+								</div><br/>
+								<?php } ?>
+							</div>
+							<?php }
+				
+						if (!VmConfig::get('use_as_catalog', 0) and !empty($product->prices['salesPrice'])) {
+						?>
+				
+						<div class="addtocart-bar">
+				
+							<?php // Display the quantity box
+				
+							$stockhandle = VmConfig::get ('stockhandle', 'none');
+							if (($stockhandle == 'disableit' or $stockhandle == 'disableadd') and ($product->product_in_stock - $product->product_ordered) < 1) {
+								?>
+								<a href="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&layout=notify&virtuemart_product_id=' . $product->virtuemart_product_id); ?>" class="notify"><?php echo JText::_ ('COM_VIRTUEMART_CART_NOTIFY') ?></a>
+				
+								<?php } else { ?>
+								<label for="quantity<?php echo $product->virtuemart_product_id; ?>" class="quantity_box"><?php echo JText::_ ('COM_VIRTUEMART_CART_QUANTITY'); ?>: </label>
+								<span class="quantity-box">
+									<input type="text" class="quantity-input js-recalculate" name="quantity[]" value="<?php if (isset($product->min_order_level) && (int)$product->min_order_level > 0) { echo $product->min_order_level;
+										} else {
+											echo '1';
+										} ?>"
+									/>
+								</span>
+								<span class="quantity-controls js-recalculate">
+									<input type="button" class="quantity-controls quantity-plus"/>
+									<input type="button" class="quantity-controls quantity-minus"/>
+								</span>
+								<?php // Display the quantity box END ?>
+				
+								<?php
+								// Display the add to cart button
+								?>
+								<span class="addtocart-button">
+									<?php echo shopFunctionsF::getAddToCartButton ($product->orderable); ?>
+								</span>
+								<?php } ?>
+				
+							<div class="clear"></div>
+						</div>
+						<?php }
+						 // Display the add to cart button END  ?>
+						<input type="hidden" class="pname" value="<?php echo htmlentities($product->product_name, ENT_QUOTES, 'utf-8') ?>"/>
+						<input type="hidden" name="option" value="com_virtuemart"/>
+						<input type="hidden" name="view" value="cart"/>
+						<input type="hidden" class="quantity-input js-recalculate" name="quantity[]" value="<?php if (isset($product->min_order_level) && (int)$product->min_order_level > 0) { echo $product->min_order_level;
+							} else {
+								echo '1';
+							} ?>"
+						/>
+						<noscript><input type="hidden" name="task" value="add"/></noscript>
+						<input type="hidden" name="virtuemart_product_id[]" value="<?php echo $product->virtuemart_product_id ?>"/>
+					</form>
+				
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+			
+			
+		</div>
+	<?php
+	$nb ++;
+
+	// Do we need to close the current row now?
+	if ($col == $products_per_row) { ?>
+	<div class="clear"></div>
+	</div>
+		<?php
+		$col = 1;
+	} else {
+		$col ++;
+	}
+	
+}
+// Do we need a final closing row tag?
+if ($col != 1) { ?>
+	<div class="clear"></div>
+	</div>
+<?php
+}
+?>
+</div>
+<?php }

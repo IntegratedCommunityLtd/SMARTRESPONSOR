@@ -1,0 +1,434 @@
+/* ----- GENERAL ----- */
+
+#cWindow, #community-wrap * {
+	direction: rtl;
+	text-align: right;
+}
+
+/* ----- FLOATING ELEMENTS ----- */
+#community-wrap .cFloat-R,
+body #cWindow .cFloat-R,
+#community-wrap .pull-right,
+#community-wrap .cSubmenu li.action,
+#community-wrap .cFloatedList>li.cFloat-R {
+	float: left;
+}
+
+#community-wrap .cFloat-L,
+body #cWindow .cFloat-L,
+body #cWindow .cFloatedList>li,
+#community-wrap .pull-left,
+#community-wrap .cFloatedList li,
+#community-wrap .cThumbsList li,
+#community-wrap .cThumbsList li a,
+#community-wrap .cStream-Actions > i,
+#community-wrap .cStream-Actions > span,
+#community-wrap .row-fluid [class*="span"] {
+	float: right;
+}
+
+/* Login Page */
+#community-wrap .input-prepend.input-block-level .add-on {
+  float:none;
+  border-right:inherit;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+#community-wrap .input-prepend.input-block-level input {
+  border-right:0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+
+/* Toolbar */
+#community-wrap .js-toolbar .nav {
+  float:right;
+}
+
+#community-wrap .navbar .nav>li {
+  float:right;
+}
+
+#community-wrap .navbar .nav.pull-right {
+  float:left;
+}
+
+#community-wrap .js-toolbar .dropdown-menu {
+  right:0;
+  left:auto;
+}
+
+#community-wrap .navbar .nav>li>.dropdown-menu:before {
+  left: auto;
+  right: 9px;
+}
+
+#community-wrap .navbar .nav>li>.dropdown-menu:after {
+  left:auto;
+  right:10px;
+}
+
+
+
+/* Activity Stream */
+#community-wrap .joms-stream-avatar {
+  float:right;
+}
+
+#community-wrap .joms-stream-content {
+  padding-right:80px;
+  padding-left:0px;
+}
+
+#community-wrap .joms-stream-options {
+  right:auto;
+  left:0;
+}
+
+#community-wrap .joms-stream-options .dropdown-menu {
+  left: 0 !important;
+  right: inherit !important;
+}
+
+#community-wrap .joms-stream-status-action a {
+  float:right;
+}
+
+#community-wrap .joms-stream-box aside {
+  float:right;
+}
+
+#community-wrap .joms-stream-box article {
+  margin-right:80px;
+  margin-left:0;
+}
+
+#community-wrap .joms-stream-box .joms-stream-fetch-content {
+  margin-right:0;
+}
+
+#community-wrap .cStream-FormSubmit {
+  text-align:left;
+}
+
+/* Postbox */
+
+#community-wrap .joms-postbox-tab li {
+  float:right;
+}
+
+#community-wrap .joms-postbox-charcount {
+  right:auto;
+  left:0;
+}
+
+#community-wrap .joms-postbox-action {
+  right:auto;
+  left:5px;
+}
+
+/* Focus Area */
+
+#community-wrap .navbar .nav {
+  float:right;
+}
+
+#community-wrap .js-focus-avatar {
+  margin-left:20px;
+  margin-right:0;
+  right:20px;
+  left:auto;
+}
+
+#community-wrap .js-focus-header .row-fluid .offset3:first-child {
+  margin-right:25.53191489361702% !important;
+  margin-left:0;
+}
+
+#community-wrap .navbar .pull-right>li>.dropdown-menu,
+#community-wrap .navbar .nav>li>.dropdown-menu.pull-right {
+  left:0;
+  right:auto;
+}
+
+#community-wrap .js-focus-header .span4 {
+  padding-right: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#community-wrap .cEvent-Rsvp .selector .attend {
+  background-position: 0px -4px;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+/* cIndex , Listing */
+#community-wrap .cIndex-Actions>div.cIndex-Feature {
+  left:0;
+  right:auto;
+}
+
+/* cMedia , cMessage, cMeta , cToolbox */
+#community-wrap .cMedia-Controls {
+  text-align:center;
+}
+
+#community-wrap .cMessage-Body {
+  margin: 0 60px 0 0;
+}
+
+#community-wrap .cMedia-Meta .cMeta-Details {
+  margin: 0 58px 0 0;
+}
+
+#community-wrap .cToolBox-Options {
+  float:left;
+}
+
+#community-wrap .cToolBox-Avatar {
+  margin: 0 0 0 14px;
+}
+
+/* Submenu */
+#community-wrap .cSubmenu li+li {
+  border-right: solid 1px #cccccc;
+  border-left: 0;
+  margin: 0 7px 0 0;
+  padding: 0 7px 0 0;
+}
+
+#community-wrap .cSubmenu-Search {
+  left:auto;
+  right:0;
+}
+
+#community-wrap .cSubmenu li.action.last-child {
+  border-right:0;
+}
+
+/* cWindow */
+#cwin_logo  {
+  right:12px;
+  left:auto;
+}
+
+#cwin_close_btn {
+  left:0;
+  right:auto;
+}
+
+#cWindowContent {
+  text-align:right;
+}
+
+body #cWindow .cFormList {
+  text-align:right;
+}
+
+body #cWindow .cFormList.cFormVertical .form-label {
+  text-align:right;
+}
+
+body #cWindow #cWindowAction .btn.btn-primary {
+  float:left !important;
+}
+
+body #cWindow #cWindowAction .btn {
+  float:right !important;
+}
+
+body #cWindow .cStream-Content {
+  margin:0 42px 0 0;
+}
+
+body #cWindow .cGrid-Info {
+  margin: 0 50px 0 5px;
+}
+
+body #cWindow .cGrid-Check {
+  float: right;
+}
+
+body #cWindow .cWindowFinder {
+  padding: 10px 10px 10px 20px;
+}
+
+body #cWindow .textarea-label-right {
+  text-align:left;
+  left:0;
+  right:auto;
+}
+
+body #cWindow .open>.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+/* cVideo */
+#community-wrap .cVideo-Wrapper {
+  text-align:center;
+}
+
+/* ----- GUESTBOX ----- */
+#community-wrap .cGuest-Intro {
+	margin: 5px 5px 5px 230px;
+}
+#community-wrap .cGuest-Intro .cGuest-Story li {
+	padding: 0 25px 0 0;
+}
+#community-wrap .cGuest-Intro .cGuest-Story li .com-icon-tick {
+	margin: 0 -25px 0 0;
+}
+
+/* ----- LAYOUT ----- */
+#community-wrap .cSidebar + .cMain {
+	margin: 0 0 0 245px;
+}
+
+/* ----- TOOLBAR ----- */
+#community-wrap .com-toolbar-signout {
+	background-position: 0 -100px;
+}
+
+
+/* ----- PAGE ACTION BUTTONS ----- */
+#community-wrap .cPageAction > div {
+	float: left;
+}
+
+/* ----- TABS ----- */
+#community-wrap .cTabsMenu li + li {
+	margin: 0 2px 0 0;
+}
+
+
+
+/* ----- FORMS:LAYOUT & ELEMENTS ----- */
+#community-wrap .cFormList.cFormHorizontal .form-label {
+	float: right;
+	text-align: right;
+}
+#community-wrap .cFormList.cFormHorizontal .form-field {
+	margin: 0 175px 0 0;
+}
+#community-wrap .cFormList.cFormVertical .form-label {
+	text-align: right;
+}
+#community-wrap .cFormList.cFormFull .form-field {
+	margin: 0 0 0 14px;
+}
+#community-wrap .label-checkbox, #community-wrap .label-radio {
+	padding: 0 25px 0 0;
+}
+#community-wrap .label-checkbox > input[type="checkbox"], #community-wrap .label-radio > input[type="radio"] {
+	float: right;
+	margin: 1px -25px 0 0;
+}
+
+#community-wrap .cFormList.cFormHorizontal .form-field>div,
+#community-wrap .cCheckList .check-row label {
+  margin-right:0;
+}
+
+/* ----- FORMS:PRIVACY ----- */
+#community-wrap .cFormList .form-privacy {
+	right: auto;
+	left: 0;
+}
+#community-wrap .form-privacy .js_dropDownMaster {
+	left: 0;
+	right: auto;
+}
+
+/* ----- PAGE ADMIN ----- */
+#community-wrap .cPageAdmin li + li {
+	border-left: 0;
+	border-right: 1px dotted #CDA6AB;
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;
+}
+
+/* ----- PAGE ----- */
+#community-wrap .cPageInfo {
+	margin: 0 175px 0 0;
+}
+#community-wrap .cPageAvatar .cPage-Like {
+	left: auto;
+	right: -1px;
+}
+
+/* ----- STREAM ----- */
+#community-wrap .cStream-Content {
+	margin: 0 58px 0 0;
+}
+#community-wrap .cStream-Icon {
+	margin: -2px 0 0 5px;
+}
+#community-wrap .cStream-Actions span + span {
+	background-position: right center;
+	margin: 0 5px 0 0;
+	padding: 0 7px 0 0;
+}
+#community-wrap .cStream-Comment .cStream-Content {
+	margin: 0 50px 0 0;
+}
+
+/* ----- VIDEO ----- */
+#community-wrap .cVideo-Content {
+	margin: 0 122px 0 0
+}
+
+/* ----- MODULES ----- */
+#community-wrap .cSearch-Box {
+	padding-right: 0;
+	padding-left: 38px;
+}
+
+#community-wrap .cEventMini .cEventDetails {
+	margin: 0 55px 0 0;
+}
+#community-wrap .cThumbDetails .cThumb-Detail {
+	margin: 0 53px 0 0;
+}
+#community-wrap .app-box-list.for-menu li {
+	padding-right: 25px;
+	padding-left: 0;
+}
+#community-wrap .app-box-list.for-menu li i {
+	float: right;
+	margin: 0 -25px 0 0;
+}
+#community-wrap .app-box-footer {
+	text-align: right;
+}
+
+/* ----- GRID ----- */
+#community-wrap .row-fluid [class*="span"]:first-child {
+	margin-left: auto;
+	margin-right: 0;
+}
+#community-wrap .row-fluid [class*="span"] {
+	margin-left: auto;
+	margin-right: 2.12766%;
+}
+
+/* ----- INDEX LISTING ----- */
+#community-wrap .cIndex-Content {
+	margin: 0 79px 0 0;
+}
+#community-wrap .cIndex-Actions > div {
+	margin: 0 0 0 10px;
+}
+#community-wrap .cIndex-Actions > div.cFloat-R {
+	margin: 0 10px 0 0;
+}
+
+/* ----- WALL ----- */
+#community-wrap .cComment-Body {
+	margin: 0 58px 0 0;
+}

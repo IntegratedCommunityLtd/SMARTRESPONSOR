@@ -1,0 +1,87 @@
+%avatar {
+
+    display:inline-block;
+    line-height:0;
+
+    @if $scss-avatar-shape == circle {
+        @extend %circle;
+    }
+
+
+    @if $scss-avatar-style == bordered {
+        @extend %bordered;
+        padding:3px;
+        background:white;
+    }
+
+}
+
+.joms-avatar {
+    img {
+        @extend %avatar;
+        width: 100%;
+        max-width: 64px ;
+        max-height: 64px;
+        .joms-stream__body & {
+            max-width:128px;
+            max-height: 128px;
+        }
+    }
+    &.single img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+
+.joms-avatar--stream,
+.joms-avatar--comment,
+.joms-avatar--focus {
+    display:table-cell;
+    width:48px;
+    position: relative;
+    a {
+        display:block;
+    }
+    img {
+        max-width:48px;
+        @extend %avatar;
+    }
+
+    &.online {
+        &:after {
+            content:'●';
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            font-size: 20px;
+            color: #8BC34A;
+        }
+    }
+}
+
+.joms-avatar--comment {
+    width:32px;
+}
+
+.joms-avatar--focus {
+    width: 64px;
+    img {
+        max-width: 64px;
+    }
+    svg {
+        top: 8px;
+        left: 12px;
+        width: 40px;
+    }
+    @include media('medium') {
+        width: 100px;
+        img {
+            max-width: 100px;
+        }
+        svg {
+            top: 25px;
+            left: 25px;
+            width: 45px;
+        }
+    }
+}
