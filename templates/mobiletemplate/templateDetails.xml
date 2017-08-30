@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.3" type="template" client="site" overwrite="true">
+	<name>mobiletemplate</name>
+	<creationDate>04 Mar 13</creationDate>
+	<author>nhuang</author>
+	<copyright>nhuang</copyright>
+	<authorEmail>jianbo.zhu@gmail.com</authorEmail>
+	<authorUrl>http://www.nhuang.com</authorUrl>
+	<version>1.2.0</version>
+	<description>nhuang</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>blocks</folder>
+	</files>
+	
+
+	<positions>
+<position>mobile_nav</position>
+		<position>footer</position>
+		<position>content_top</position>
+
+		
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_mobiletemplate.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_mobiletemplate.sys.ini</language>
+	</languages>
+<config>
+	<fields name="params">
+		
+			<fieldset name="basic">
+			
+			<field type="text" name="nav_module" default="mobile_nav" label="TPL_MOBILETEMLATE_NAV_MODULE_LABEL" description="TPL_MOBILETEMLATE_NAV_MODULE_DESC" />
+			<field type="text" name="content_top" default="content_top" label="TPL_MOBILETEMLATE_CONTENT_MODULE_LABEL" description="TPL_MOBILETEMLATE_CONTENT_MODULE_DESC" />
+            <field type="color" name="tpl_color" default="#333" label="TPL_MOBILETEMLATE_BG_COLOR_LABEL" description="TPL_MOBILETEMLATE_BG_COLOR_DESC" />
+           <field type="color" name="tpl_header_color" default="#555" label="TPL_MOBILETEMLATE_BG_HEADER_COLOR_LABEL" description="TPL_MOBILETEMLATE_BG_HEADER_COLOR_DESC" />
+            
+				<field name="submenu_type" type="list" default="0"
+					label="TPL_MOBILETEMPLATE_SUBMENU_TYPE_LABEL"
+					description="TPL_MOBILETEMPLATE_SUBMENU_TYPE_DESC"
+				>
+					<option value="0">TPL_MOBILETEMPLATE_HORIZONTAL</option>
+					<option value="1">TPL_MOBILETEMPLATE_VERTICAL</option>
+                </field>
+                 
+				</fieldset>
+				
+			</fields>
+	
+	</config>
+</extension>

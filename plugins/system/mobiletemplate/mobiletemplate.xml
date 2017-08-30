@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="system" overwrite="true">
+	<name>plg_system_mobiletemplate</name>
+	<author>nhuang</author>
+	<authorEmail>nhuang@nhuang.com</authorEmail>
+	<authorUrl>http://www.nhuang.com</authorUrl>
+	<creationDate>2014-4-9</creationDate>
+	<copyright>Nhuang All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<version>1.2.0</version>
+	<description>PLG_SYSTEM_MOBILETEMPLATE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="mobiletemplate">mobiletemplate.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_mobiletemplate.ini</language>
+		<language tag="en-GB">en-GB.plg_system_mobiletemplate.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="template_name" type="text"
+					description="PLG_MOBILETEMPLATE_TEMPLATE_NAME_DESC"
+					label="PLG_MOBILETEMPLATE_TEMPLATE_NAME_LABEL"
+					default="mobiletemplate"
+					size="37"
+                    />
+                <field name="filter" type="list" multiple="multiple"
+					description="PLG_MOBILETEMPLATE_FILTER_DESC"
+                    label="PLG_MOBILETEMPLATE_FILTER_LABEL">
+                         <option value="iPhone">iPhone</option>
+                         <option value="iPad">iPad</option>
+                         <option value="Android">Android</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
